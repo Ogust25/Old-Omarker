@@ -10,21 +10,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
 </head>
-<body class="w-screen h-full">
-    <div class="w-screen h-full bg-bg-main bg-cover fixed">
-        <header class="flex flex-col items-center justify-center">
-            <nav>
-                <ul class="flex font-bebas pt-5 lg:text-3xl">
-                    <li class="mr-20 tracking-widest hover:font-bold">PEINTURE</li>
-                    <li class="mr-20 tracking-widest hover:font-bold">TATTOO</li>
-                    <li class="tracking-widest hover:font-bold">GRAPHISME</li>
-                </ul>
-            </nav>
+<body class="h-full">
+    <div class="h-full bg-bg-main bg-cover">
+        <nav class="fixed top-0 left-1/2 transform -translate-x-1/2 z-30">
+            <ul class="flex font-bebas pt-5 lg:text-3xl">
+                <li class="mr-20 tracking-widest hover:font-bold">PEINTURE</li>
+                <li class="mr-20 tracking-widest hover:font-bold">TATTOO</li>
+                <li class="tracking-widest hover:font-bold">GRAPHISME</li>
+            </ul>
+        </nav>
+        <header class="h-screen flex flex-col items-center justify-center relative">
             <img class="w-5/6" src="./assets/images/blaze.png" alt="Logo Omarker">
+            <img class="absolute bottom-0 right-0" src="./assets/images/gradient_black.png" alt="gradient">
         </header>
         <!-- Biographie -->
-        <section>
-    
+        <section class="h-screen bg-cover bg-bio">
+            <img src="./assets/images/BIOGRAPHIE.png" alt="titre animé biographie">
+            <div class="bg-white">
+                <p>Artiste pluridisciplinaire, Omarker explore les supports et les médiums à travers sa pratique de la peinture, du tatouage et du design graphique.</p>
+                <p>Son travail, à mi-chemin entre art urbain et design graphique contemporain, se caractérise par un ensemble d’éléments graphiques, de dynamiques et de lettres fragmentés qui s’oppose et se superpose, créant un rythme dans un ensemble abstrait.</p>
+                <p>Omarker tente d’adapter son langage et ses codes au travers des supports et des techniques tout en conservant un aspect brut et un équilibre des éléments qui composent l’image.</p>
+            </div>
         </section>
         <!-- Instagram -->
         <section>
