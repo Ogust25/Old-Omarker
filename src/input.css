@@ -1,3 +1,8 @@
+/* Tailwind */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Font */
+@import url(../assets/fonts/bebas/Bebas_Neue_Pro_Regular.otf);
+@import url(../assets/fonts/bebas/Bebas_Neue_Pro_Bold.otf);

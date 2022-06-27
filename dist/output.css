@@ -1,6 +1,6 @@
-/*
-! tailwindcss v3.1.4 | MIT License | https://tailwindcss.com
-*/
+/* Tailwind */
+
+/* ! tailwindcss v3.1.4 | MIT License | https://tailwindcss.com */
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -558,6 +558,14 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.fixed {
+  position: fixed;
+}
+
+.mr-10 {
+  margin-right: 2.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -566,12 +574,12 @@ video {
   height: 100%;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
 .w-screen {
   width: 100vw;
+}
+
+.w-5\/6 {
+  width: 83.333333%;
 }
 
 .flex-col {
@@ -582,10 +590,31 @@ video {
   align-items: center;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .bg-bg-main {
   background-image: url('../assets/images/background.jpg');
 }
 
 .bg-cover {
   background-size: cover;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
+}
+
+.font-bebas {
+  font-family: Bebas Neue;
+}
+
+/* Font */
+
+@media (min-width: 1024px) {
+  .lg\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
 }
