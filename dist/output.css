@@ -417,6 +417,13 @@ video {
   height: auto;
 }
 
+@font-face {
+  font-family: 'Bebas Neue Pro';
+
+  src: url(../assets/fonts/bebas/Bebas_Neue_Pro_Regular.otf),
+        url(../assets/fonts/bebas/Bebas_Neue_Pro_Bold.otf);
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -566,6 +573,18 @@ video {
   margin-right: 2.5rem;
 }
 
+.mr-16 {
+  margin-right: 4rem;
+}
+
+.mr-20 {
+  margin-right: 5rem;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -594,6 +613,12 @@ video {
   justify-content: center;
 }
 
+.space-x-3 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.75rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .bg-bg-main {
   background-image: url('../assets/images/background.jpg');
 }
@@ -607,14 +632,54 @@ video {
 }
 
 .font-bebas {
-  font-family: Bebas Neue;
+  font-family: Bebas Neue Pro;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.tracking-wide {
+  letter-spacing: 0.025em;
+}
+
+.tracking-wider {
+  letter-spacing: 0.05em;
+}
+
+.tracking-widest {
+  letter-spacing: 0.1em;
 }
 
 /* Font */
+
+.hover\:font-bold:hover {
+  font-weight: 700;
+}
 
 @media (min-width: 1024px) {
   .lg\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .lg\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .lg\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .lg\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .lg\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }

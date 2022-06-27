@@ -6,3 +6,11 @@
 /* Font */
 @import url(../assets/fonts/bebas/Bebas_Neue_Pro_Regular.otf);
 @import url(../assets/fonts/bebas/Bebas_Neue_Pro_Bold.otf);
+
+@layer base {
+    @font-face {
+        font-family: 'Bebas Neue Pro';
+        src: url(../assets/fonts/bebas/Bebas_Neue_Pro_Regular.otf),
+        url(../assets/fonts/bebas/Bebas_Neue_Pro_Bold.otf);
+    }
+}
