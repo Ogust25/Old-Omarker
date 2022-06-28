@@ -7,9 +7,12 @@
     <title>Omarker</title>
     <link rel="stylesheet" href="./dist/output.css" />
   </head>
-  <body>
+  <body class="overflow-x-hidden">
     <div class="h-full bg-bg-main bg-cover" id="page">
-      <nav class="fixed top-0 left-1/2 transform -translate-x-1/2 z-30" id="nav">
+      <nav
+        class="fixed top-0 left-1/2 transform -translate-x-1/2 z-30"
+        id="nav"
+      >
         <ul class="flex font-bebas pt-5 lg:text-3xl">
           <li class="mr-20 tracking-widest hover:font-bold">PEINTURE</li>
           <li class="mr-20 tracking-widest hover:font-bold">TATTOO</li>
@@ -31,8 +34,14 @@
         />
       </header>
       <!-- Biographie -->
-      <section class="h-screen bg-cover bg-bio relative duration-500 ease-out invert" id="bio">
-        <!-- <img src="./assets/images/BIOGRAPHIE.png" alt="titre animé biographie"> -->
+      <section
+        class="h-screen bg-cover bg-bio relative duration-500 ease-out invert"
+        id="bio"
+      >
+        <div class="test flex text-Jorange font-G-Ultra text-9xl overflow-hidden absolute bottom-0 left-5 h-full rotate-180 scale-x-200">
+          <span class="infiniteAnimation whitespace-nowrap">BIOGRAPHIE</span>
+          <span class="infiniteAnimation whitespace-nowrap">BIOGRAPHIE</span>
+        </div>
         <div
           class="bg-white absolute -bottom-1/4 right-0 w-1/4 p-10 font-bebas z-10"
         >
@@ -56,29 +65,28 @@
       </section>
       <!-- Formulaire -->
       <section
-        class="h-full bg-transparent relative flex flex-col items-center pt-5 pb-20"
+        class="h-full bg-neg relative flex flex-col items-center pt-5 pb-20"
         id="contact"
       >
-        <h2
-          class="text-white text-9xl scale-y-200 scale-x-90 font-G-Ultra w-11/12 mt-5"
-        >
-          CONTACT
-        </h2>
+      <div class="test flex text-white font-G-Ultra text-9xl overflow-hidden absolute bottom-0 right-0 h-full scale-x-200">
+        <span class="infiniteAnimation whitespace-nowrap">CONTACT</span>
+        <span class="infiniteAnimation whitespace-nowrap">CONTACT</span>
+      </div>
         <form class="flex flex-col font-bebas w-1/2 mt-28">
           <input
-            class="border-b border-white bg-transparent placeholder:text-gray-300 placeholder:text-2xl text-2xl text-white pl- pb-5 focus:border-Jblue focus:border-b-2 focus:outline-none"
+            class="border-b border-white bg-transparent placeholder:text-white placeholder:text-2xl text-2xl text-white pl- pb-5 focus:border-Jblue focus:border-b-2 focus:outline-none"
             placeholder="Nom Prénom"
             type="text"
           />
           <p class="invisible pt-2 pb-5 text-xl text-red-600">Error</p>
           <input
-            class="border-b border-white bg-transparent placeholder:text-gray-300 placeholder:text-2xl text-2xl text-white pl- pb-5 focus:border-Jblue focus:border-b-2 focus:outline-none"
+            class="border-b border-white bg-transparent placeholder:text-white placeholder:text-2xl text-2xl text-white pl- pb-5 focus:border-Jblue focus:border-b-2 focus:outline-none"
             placeholder="Email"
             type="text"
           />
           <p class="invisible pt-2 pb-5 text-xl text-red-600">Error</p>
           <textarea
-            class="border-b border-white bg-transparent placeholder:text-gray-300 placeholder:text-2xl text-2xl text-white pl- pb-5 focus:border-Jblue focus:border-b-2 focus:outline-none resize-none"
+            class="border-b border-white bg-transparent placeholder:text-white placeholder:text-2xl text-2xl text-white pl- pb-5 focus:border-Jblue focus:border-b-2 focus:outline-none resize-none"
             placeholder="Message"
             rows="6"
           ></textarea>
@@ -101,11 +109,6 @@
       </section>
       <!-- Instagram -->
       <section class="bg-insta h-screen relative">
-
-
-
-
-
         <footer
           class="flex flex-col items-center justify-center pt-4 pb-2 absolute bottom-0 left-1/2 transform -translate-x-1/2"
         >

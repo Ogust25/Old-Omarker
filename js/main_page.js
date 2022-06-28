@@ -11,4 +11,4 @@ window.addEventListener('scroll', () => {
         bio.classList.add('invert');
         nav.classList.remove('text-white');
     }
-})
+})  
