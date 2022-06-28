@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="./dist/output.css" />
   </head>
   <body>
-    <div class="h-full bg-bg-main bg-cover">
-      <nav class="fixed top-0 left-1/2 transform -translate-x-1/2 z-30">
+    <div class="h-full bg-bg-main bg-cover" id="page">
+      <nav class="fixed top-0 left-1/2 transform -translate-x-1/2 z-30" id="nav">
         <ul class="flex font-bebas pt-5 lg:text-3xl">
           <li class="mr-20 tracking-widest hover:font-bold">PEINTURE</li>
           <li class="mr-20 tracking-widest hover:font-bold">TATTOO</li>
@@ -31,7 +31,7 @@
         />
       </header>
       <!-- Biographie -->
-      <section class="h-screen bg-cover bg-bio relative">
+      <section class="h-screen bg-cover bg-bio relative duration-500 ease-out invert" id="bio">
         <!-- <img src="./assets/images/BIOGRAPHIE.png" alt="titre animé biographie"> -->
         <div
           class="bg-white absolute -bottom-1/4 right-0 w-1/4 p-10 font-bebas z-10"
@@ -56,7 +56,8 @@
       </section>
       <!-- Formulaire -->
       <section
-        class="h-full bg-black relative flex flex-col items-center pt-5 pb-20"
+        class="h-full bg-transparent relative flex flex-col items-center pt-5 pb-20"
+        id="contact"
       >
         <h2
           class="text-white text-9xl scale-y-200 scale-x-90 font-G-Ultra w-11/12 mt-5"
@@ -117,5 +118,6 @@
         </footer>
       </section>
     </div>
+    <script src="./js/main_page.js"></script>
   </body>
 </html>
