@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Omarker</title>
     <link rel="stylesheet" href="./dist/output.css" />
+    <link rel="shortcut icon" href="./assets/images/blaze.png" type="image/x-icon">
   </head>
   <body class="overflow-x-hidden">
     <div class="h-full bg-bg-main bg-cover" id="page">
@@ -38,7 +39,9 @@
         class="h-screen bg-cover bg-bio relative duration-500 ease-out invert"
         id="bio"
       >
-        <div class="test flex text-Jorange font-G-Ultra text-9xl overflow-hidden absolute bottom-0 left-5 h-full rotate-180 scale-x-200">
+        <div
+          class="test flex text-Jorange font-G-Ultra text-9xl overflow-hidden absolute bottom-0 left-5 h-full rotate-180 scale-x-200"
+        >
           <span class="infiniteAnimation whitespace-nowrap">BIOGRAPHIE</span>
           <span class="infiniteAnimation whitespace-nowrap">BIOGRAPHIE</span>
         </div>
@@ -68,36 +71,51 @@
         class="h-full bg-neg relative flex flex-col items-center pt-5 pb-20"
         id="contact"
       >
-      <div class="test flex text-white font-G-Ultra text-9xl overflow-hidden absolute bottom-0 right-0 h-full scale-x-200">
-        <span class="infiniteAnimation whitespace-nowrap">CONTACT</span>
-        <span class="infiniteAnimation whitespace-nowrap">CONTACT</span>
-      </div>
-        <form class="flex flex-col font-bebas w-1/2 mt-28">
+        <div
+          class="test flex text-white font-G-Ultra text-9xl overflow-hidden absolute bottom-0 right-0 h-full scale-x-200"
+        >
+          <span class="infiniteAnimation whitespace-nowrap">CONTACT</span>
+          <span class="infiniteAnimation whitespace-nowrap">CONTACT</span>
+          <span class="infiniteAnimation whitespace-nowrap">CONTACT</span>
+        </div>
+        <form class="flex flex-col font-G-Bold w-1/2 mt-32" method="post" id="formHome">
           <input
             class="border-b border-white bg-transparent placeholder:text-white placeholder:text-2xl text-2xl text-white pl- pb-5 focus:border-Jblue focus:border-b-2 focus:outline-none"
             placeholder="Nom Prénom"
+            id="inputNomPrenom"
+            name="nomPrenom"
             type="text"
+            pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+"
+            required
           />
-          <p class="invisible pt-2 pb-5 text-xl text-red-600">Error</p>
+          <p class="invisible pt-2 pb-5 text-xl text-red-600" id="erreurNomPrenom">Error</p>
           <input
             class="border-b border-white bg-transparent placeholder:text-white placeholder:text-2xl text-2xl text-white pl- pb-5 focus:border-Jblue focus:border-b-2 focus:outline-none"
             placeholder="Email"
-            type="text"
+            id="inputEmail"
+            type="email"
+            name="email"
+            pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}"
+            required
           />
-          <p class="invisible pt-2 pb-5 text-xl text-red-600">Error</p>
+          <p class="invisible pt-2 pb-5 text-xl text-red-600" id="erreurEmail">Error</p>
           <textarea
             class="border-b border-white bg-transparent placeholder:text-white placeholder:text-2xl text-2xl text-white pl- pb-5 focus:border-Jblue focus:border-b-2 focus:outline-none resize-none"
             placeholder="Message"
+            id="inputMessage"
             rows="6"
+            name="message"
+            required    
           ></textarea>
-          <p class="invisible pt-1 pb-1 text-xl text-red-600">Error</p>
+          <p class="invisible pt-1 pb-1 text-xl text-red-600" id="erreurMessage">Error</p>
           <button
             class="text-white hover:text-Jblue font-G-Ultra text-9xl scale-y-50 text-left"
             type="submit"
+            id="btnFormHome"
           >
             ENVOYER
           </button>
-          <p class="invisible pt-5 pb-5 text-xl text-white text-center">
+          <p class="invisible pt-5 pb-5 text-xl text-white text-center" id="validationForm">
             Mail envoyé.
           </p>
         </form>
@@ -108,7 +126,7 @@
         />
       </section>
       <!-- Instagram -->
-      <section class="bg-insta h-screen relative">
+      <section class="bg-insta bg-cover h-screen relative">
         <footer
           class="flex flex-col items-center justify-center pt-4 pb-2 absolute bottom-0 left-1/2 transform -translate-x-1/2"
         >
