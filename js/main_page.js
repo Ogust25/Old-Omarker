@@ -18,18 +18,6 @@ const regleEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
 const regleMessage =
   /^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'()-]+$/u;
 
-/* Evenement au scroll */
-window.addEventListener("scroll", () => {
-  let scrollY = this.scrollY;
-  if (scrollY >= 775) {
-    bio.classList.remove("invert");
-    nav.classList.add("text-white");
-  } else {
-    bio.classList.add("invert");
-    nav.classList.remove("text-white");
-  }
-});
-
 /* Formulaire Home*/
 btnFormHome.addEventListener("click", () => {
   let resultatNomPrenom = regleNomPrenom.test(inputNomPrenom.value);
@@ -64,17 +52,29 @@ btnFormHome.addEventListener("click", () => {
   }
   if (resultatNomPrenom === false) {
     erreurNomPrenom.classList.remove("invisible");
-  }else{
+  } else {
     erreurNomPrenom.classList.add("invisible");
   }
   if (resultatEmail === false) {
     erreurEmail.classList.remove("invisible");
-  }else{
+  } else {
     erreurEmail.classList.add("invisible");
   }
   if (resultatMessage === false) {
     erreurMessage.classList.remove("invisible");
-  }else{
+  } else {
     erreurMessage.classList.add("invisible");
+  }
+});
+
+/* Evenement au scroll */
+window.addEventListener("scroll", () => {
+  let scrollY = this.scrollY;
+  if (scrollY >= 775) {
+    bio.classList.remove("invert");
+    nav.classList.add("text-white");
+  } else {
+    bio.classList.add("invert");
+    nav.classList.remove("text-white");
   }
 });
