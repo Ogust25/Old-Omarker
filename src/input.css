@@ -51,7 +51,7 @@
       transform: translatey(0px);
     }
   }
-  .test {
+  .verticalTxt {
     writing-mode: vertical-rl;
   }
   .infiniteAnimation {

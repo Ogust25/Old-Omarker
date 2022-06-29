@@ -70,7 +70,7 @@ btnFormHome.addEventListener("click", () => {
 /* Evenement au scroll */
 window.addEventListener("scroll", () => {
   let scrollY = this.scrollY;
-  if (scrollY >= 775) {
+  if (scrollY >= 760) {
     bio.classList.remove("invert");
     nav.classList.add("text-white");
   } else {
