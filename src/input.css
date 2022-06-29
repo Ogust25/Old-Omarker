@@ -29,6 +29,10 @@
     font-family: "Gotham Black";
     src: url(../assets/fonts/gotham/Gotham-Black.otf);
   }
+  @font-face {
+    font-family: "Gotham Light";
+    src: url(../assets/fonts/gotham/Gotham-Light.ttf);
+  }
 
   /* Animation Float on Logo */
   .floatAnimation {

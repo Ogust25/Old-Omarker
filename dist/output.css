@@ -442,6 +442,12 @@ video {
   src: url(../assets/fonts/gotham/Gotham-Black.otf);
 }
 
+@font-face {
+  font-family: "Gotham Light";
+
+  src: url(../assets/fonts/gotham/Gotham-Light.ttf);
+}
+
 /* Animation Float on Logo */
 
 .floatAnimation {
@@ -893,6 +899,10 @@ video {
   font-family: Gotham Bold;
 }
 
+.font-G-Light {
+  font-family: Gotham Light;
+}
+
 .text-9xl {
   font-size: 8rem;
   line-height: 1;
@@ -930,6 +940,11 @@ video {
 .text-red-600 {
   --tw-text-opacity: 1;
   color: rgb(220 38 38 / var(--tw-text-opacity));
+}
+
+.text-orange-600 {
+  --tw-text-opacity: 1;
+  color: rgb(234 88 12 / var(--tw-text-opacity));
 }
 
 .invert {
