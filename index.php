@@ -4,7 +4,7 @@ $request = $_SERVER['REQUEST_URI'];
 $url = explode('/', $_SERVER['REQUEST_URI']);
 switch ($url[2]) {
     case '' :
-        require __DIR__ . '/accueil.html';
+        require __DIR__ . '/home.html';
         break;
     case 'peinture' :
         require __DIR__ . '/peinture.html';
