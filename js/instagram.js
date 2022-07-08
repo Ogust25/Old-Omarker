@@ -1,25 +1,18 @@
 fetch("./php/token-insta.php").then((response) =>
   response.json().then((data) => {
-    const user = data.user;
-    const token = data.token;
+    console.log(data);
 
-    fetch(
-      `https://graph.instagram.com/me/media?fields=caption,media_url&access_token=${token}`
-    ).then((response) =>
-      response.json().then((data) => {
-        //console.log(data);
-        let instaContainer = document.querySelector("#insta-container");
+    let instaContainer = document.querySelector("#insta-container");
 
-        for (let i = 0; i < 5; i++) {
-          let imgInsta = newElem("img", {
-            src: data.data[i].media_url,
-            id: `imgInsta${i}`,
-            class: "w-1/6",
-          });
-          instaContainer.insertBefore(imgInsta, instaContainer.lastChild);
-        }
-      })
-    );
+    for (let i = 0; i < 10; i++) {
+      let imgInsta = newElem("img", {
+        src: data.data[i].media_url,
+        id: `imgInsta${i}`,
+        class:
+          "w-1/6 mx-3 my-3 hover:grayscale hover:invert hover:scale-150 ease-in-out duration-1000",
+      });
+      instaContainer.insertBefore(imgInsta, instaContainer.lastChild);
+    }
   })
 );
 
@@ -33,5 +26,3 @@ function newElem(el, attribut, content = "") {
   }
   return newElem;
 }
-
-/* AQCaSyljcPlaHwhCt_Z-tot6Fjw2h-mviFT-KFMNYO8VoeNFQlHBY1-tF5WQNTZvEgvySVkejPgMuOxacWRmZ_2cCx2s8HVMB_HIxfUgGPonU1PkkfpVo-aYolTHb1MQBBZMqwQEbqr13PzwcQe34Jsuh5XcSHDbO6C4HPknOS-zKy28vOPSuEtnCFN35uqFG6v2S7wsogK-6Mav2aq2_AYx04XeuwpmGVT13tNH2oIYgg */
