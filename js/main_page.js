@@ -70,7 +70,6 @@ btnFormHome.addEventListener("click", () => {
 /* Evenement au scroll */
 window.addEventListener("scroll", () => {
   let scrollY = this.scrollY;
-  console.log(scrollY);
   if (scrollY >= 760 && scrollY <= 2340) {
     bio.classList.remove("invert");
     nav.classList.add("text-white");
