@@ -6,6 +6,9 @@ const nomModal = document.querySelector("#nomModal");
 const tailleModal = document.querySelector("#tailleModal");
 const dateModal = document.querySelector("#dateModal");
 const techModal = document.querySelector("#techModal");
+const menu = document.querySelector("#menuPeinture");
+const navMenu = document.querySelector("#navMenu");
+const linkMenu = document.querySelectorAll(".linkMenu");
 
 frames.forEach((frame) => {
   frame.addEventListener("click", () => {
@@ -41,4 +44,28 @@ function newElem(el, attribut, content = "") {
     newElem.setAttribute(key, attribut[key]);
   }
   return newElem;
+}
+
+menu.addEventListener("click", () => {
+  toggleMenu();
+});
+
+linkMenu.forEach((link) => {
+  link.addEventListener('click', () => {
+    toggleMenu();
+  })
+})
+
+const toggleMenu = () => {
+  if (menu.dataset.open === "false") {
+    menu.dataset.open = true;
+    navMenu.classList.add("bottom-0");
+    navMenu.classList.remove("-bottom-50%");
+    menu.firstChild.nodeValue = "X";
+  } else {
+    menu.dataset.open = false;
+    navMenu.classList.remove("bottom-0");
+    navMenu.classList.add("-bottom-50%");
+    menu.firstChild.nodeValue = "MENU";
+  }
 }

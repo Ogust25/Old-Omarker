@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Omarker | Peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover</title>
+    <title>Omarker | Peinture</title>
     <link rel="stylesheet" href="./dist/output.css" />
     <link
       rel="shortcut icon"
@@ -36,19 +36,31 @@
       </nav>
       <main class="w-screen relative">
         <!-- Nav de la page -->
-        <nav class="top-1/3 left-5 z-50 fixed invisible md:visible">
-          <ul class="font-bebas text-2xl tracking-widest">
-            <li class="hover:font-bold"><a href="#mur">MUR</a></li>
-            <li class="hover:font-bold"><a href="#oeuvres">OEUVRES</a></li>
-            <li class="hover:font-bold">
-              <a href="#exposition">EXPOSITION</a>
+        <nav
+          class="-bottom-50% duration-500 bg-black w-screen md:w-auto md:top-1/3 md:left-5 z-50 fixed md:visible"
+          id="navMenu"
+        >
+          <ul
+            class="font-bebas text-2xl tracking-widest text-white md:text-black p-8 md:p-0"
+          >
+            <li>
+              <a class="linkMenu hover:font-bold" href="#mur">MUR</a>
             </li>
-            <li class="hover:font-bold"><a href="#workshop">WORKSHOP</a></li>
-            <li class="hover:font-bold">
-              <a href="./#contact">CONTACT</a>
+            <li>
+              <a class="linkMenu hover:font-bold" href="#oeuvres">OEUVRES</a>
             </li>
-            <li class="hover:font-bold">
+            <li>
+              <a class="linkMenu hover:font-bold" href="#exposition">EXPOSITION</a>
+            </li>
+            <li>
+              <a class="linkMenu hover:font-bold" href="#workshop">WORKSHOP</a>
+            </li>
+            <li>
+              <a class="hover:font-bold" href="./#contact">CONTACT</a>
+            </li>
+            <li>
               <a
+                class="linkMenu hover:font-bold"
                 href="https://www.instagram.com/julien.omarker/?hl=fr"
                 target="_blank"
                 >INSTAGRAM</a
@@ -56,6 +68,13 @@
             </li>
           </ul>
         </nav>
+        <button
+          class="md:hidden fixed bottom-0 z-50 bg-black px-2 font-G-Bold text-white left-1/2 transform -translate-x-1/2"
+          id="menuPeinture"
+          data-open="false"
+        >
+          MENU
+        </button>
         <!-- Galerie Mur -->
         <section
           id="mur"
@@ -483,7 +502,9 @@
         alt="Post instagram d'Omarker"
         id="imgModal"
       />
-      <div class="absolute bottom-5% lg:top-40% left-5% text-xl lg:text-2xl font-G-Black text-white z-40">
+      <div
+        class="absolute bottom-5% lg:top-40% left-5% text-xl lg:text-2xl font-G-Black text-white z-40"
+      >
         <p class="font-G-Black text-1xl lg:text-4xl" id="nomModal">Nom</p>
         <p class="font-G-Medium" id="tailleModal">Taille</p>
         <p class="font-G-Medium" id="techModal">Technique</p>
