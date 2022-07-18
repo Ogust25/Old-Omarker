@@ -33,6 +33,10 @@
     font-family: "Gotham Light";
     src: url(../assets/fonts/gotham/Gotham-Light.ttf);
   }
+  @font-face {
+    font-family: "Gotham Medium";
+    src: url(../assets/fonts/gotham/Gotham-Medium.ttf);
+  }
 
   /* Animation Float on Logo */
   .floatAnimation {
