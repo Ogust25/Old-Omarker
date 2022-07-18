@@ -7,6 +7,7 @@ fetch("./php/token-insta.php").then((response) =>
     for (let i = 0; i < 10; i++) {
       let imgInsta = newElem("img", {
         src: data.data[i].media_url,
+        alt: "Post instagram d'Omarker",
         id: `imgInsta${i}`,
         class:
           "arrInsta cursor-pointer sm:w-1/6 w-32 object-cover mx-3 my-3 hover:grayscale hover:invert hover:scale-150 ease-in-out duration-1000",
