@@ -259,6 +259,7 @@
             method="post"
             id="formHome"
           >
+            <!-- Nom et Prénom -->
             <input
               class="border-b border-white bg-transparent placeholder:text-white placeholder:text-xl lg:placeholder:text-2xl text-xl lg:text-2xl text-white pb-2 focus:border-Jblue focus:border-b-2 focus:outline-none"
               placeholder="Nom Prénom"
@@ -274,6 +275,8 @@
             >
               Veuillez retirer les caractères spéciaux.
             </p>
+
+            <!-- Email -->
             <input
               class="border-b border-white bg-transparent placeholder:text-white placeholder:text-xl lg:placeholder:text-2xl text-xl lg:text-2xl text-white pb-2 focus:border-Jblue focus:border-b-2 focus:outline-none"
               placeholder="Email"
@@ -289,20 +292,75 @@
             >
               Veuillez entrer une adresse mail valide.
             </p>
-            <textarea
-              class="border-b border-white bg-transparent placeholder:text-white placeholder:text-xl lg:placeholder:text-2xl text-xl lg:text-2xl text-white pb-2 focus:border-Jblue focus:border-b-2 focus:outline-none resize-none"
-              placeholder="Message"
-              id="inputMessage"
-              rows="6"
-              name="message"
+
+            <!-- 1er tattoo ? -->
+            <div class="flex flex-col items-center mb-5">
+              <p class="text-white text-xl">Premier tattoo ?</p>
+              <div class="flex">
+                <label class="text-white text-xl mr-3" for="oui">Oui</label>
+                <input class="mr-5" type="checkbox" name="oui" id="oui" />
+                <label class="text-white text-xl mr-3" for="non">Non</label>
+                <input type="checkbox" name="non" id="non" />
+              </div>
+            </div>
+            <!-- Tattoo choisis -->
+            <div class="flex">
+              <img src="#" alt="Aperçu du flash voulu">
+              <input type="file" name="" id="">
+            </div>
+
+            <!-- Emplacement du flash -->
+            <input
+              class="border-b border-white bg-transparent placeholder:text-white placeholder:text-xl lg:placeholder:text-2xl text-xl lg:text-2xl text-white pb-2 focus:border-Jblue focus:border-b-2 focus:outline-none"
+              placeholder="Emplacement du flash"
+              id="emplacmentFlash"
+              name="emplacmentFlash"
+              type="text"
+              pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+"
               required
-            ></textarea>
+            />
             <p
-              class="invisible pt-2 text-sm text-gray-400 text-right font-G-Light"
-              id="erreurMessage"
+              class="invisible pt-2 pb-2 lg:pb-5 text-sm text-gray-400 text-right font-G-Light"
+              id="erreurEmplacment"
             >
               Veuillez retirer les caractères spéciaux.
             </p>
+
+            <!-- Taille du flash -->
+            <input
+              class="border-b border-white bg-transparent placeholder:text-white placeholder:text-xl lg:placeholder:text-2xl text-xl lg:text-2xl text-white pb-2 focus:border-Jblue focus:border-b-2 focus:outline-none"
+              placeholder="Taille du flash"
+              id="tailleFlash"
+              name="tailleFlash"
+              type="text"
+              pattern="[a-zA-Z0-9àáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+"
+              required
+            />
+            <p
+              class="invisible pt-2 pb-2 lg:pb-5 text-sm text-gray-400 text-right font-G-Light"
+              id="erreurTaille"
+            >
+              Veuillez retirer les caractères spéciaux.
+            </p>
+
+            <!-- Budget -->
+            <input
+              class="border-b border-white bg-transparent placeholder:text-white placeholder:text-xl lg:placeholder:text-2xl text-xl lg:text-2xl text-white pb-2 focus:border-Jblue focus:border-b-2 focus:outline-none"
+              placeholder="Budget"
+              id="budgetFlash"
+              name="budgetFlash"
+              type="text"
+              pattern="[a-zA-Z0-9àáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+"
+              required
+            />
+            <p
+              class="invisible pt-2 pb-2 lg:pb-5 text-sm text-gray-400 text-right font-G-Light"
+              id="erreurBudget"
+            >
+              Veuillez retirer les caractères spéciaux.
+            </p>
+
+            <!-- Btn envoyer -->
             <button
               class="text-white hover:text-Jblue font-G-Ultra text-6xl sm:text-8xl lg:text-9xl scale-y-50 text-left"
               type="submit"
@@ -337,6 +395,7 @@
         </p>
       </footer>
     </div>
+
     <!-- Boite modal pour les images -->
     <div
       class="hidden w-screen h-screen bg-black bg-opacity-90 z-50 fixed top-0 left-0 justify-center items-center"
