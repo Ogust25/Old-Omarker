@@ -1,3 +1,4 @@
+/* Fetch les fichiers qui gerent l'api instagram */
 fetch("./php/token-insta.php").then((response) =>
   response.json().then((data) => {
     //console.log(data);
