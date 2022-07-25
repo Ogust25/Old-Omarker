@@ -247,7 +247,7 @@
             >
               <img
                 class="flash object-cover hover:invert duration-1000 ease-in-out"
-                src="./assets/images/croc.jpg"
+                src="./assets/images/flashs/croco.jpg"
                 alt="croc"
               />
               <p>200€</p>
@@ -257,7 +257,7 @@
             >
               <img
                 class="flash object-cover hover:invert duration-1000 ease-in-out"
-                src="./assets/images/croc.jpg"
+                src="./assets/images/flashs/52-3.jpg"
                 alt="croc"
               />
               <p>200€</p>
@@ -267,7 +267,7 @@
             >
               <img
                 class="flash object-cover hover:invert duration-1000 ease-in-out"
-                src="./assets/images/croc.jpg"
+                src="./assets/images/flashs/56(4).jpg"
                 alt="croc"
               />
               <p>200€</p>
@@ -277,7 +277,7 @@
             >
               <img
                 class="flash object-cover hover:invert duration-1000 ease-in-out"
-                src="./assets/images/croc.jpg"
+                src="./assets/images/flashs/croco.jpg"
                 alt="croc"
               />
               <p>200€</p>
@@ -287,7 +287,7 @@
             >
               <img
                 class="flash object-cover hover:invert duration-1000 ease-in-out"
-                src="./assets/images/croc.jpg"
+                src="./assets/images/flashs/croco.jpg"
                 alt="croc"
               />
               <p>200€</p>
@@ -297,7 +297,7 @@
             >
               <img
                 class="flash object-cover hover:invert duration-1000 ease-in-out"
-                src="./assets/images/croc.jpg"
+                src="./assets/images/flashs/croco.jpg"
                 alt="croc"
               />
               <p>200€</p>
@@ -307,7 +307,7 @@
             >
               <img
                 class="flash object-cover hover:invert duration-1000 ease-in-out"
-                src="./assets/images/croc.jpg"
+                src="./assets/images/flashs/croco.jpg"
                 alt="croc"
               />
               <p>200€</p>
@@ -317,7 +317,7 @@
             >
               <img
                 class="flash object-cover hover:invert duration-1000 ease-in-out"
-                src="./assets/images/croc.jpg"
+                src="./assets/images/flashs/croco.jpg"
                 alt="croc"
               />
               <p>200€</p>
@@ -327,7 +327,7 @@
             >
               <img
                 class="flash object-cover hover:invert duration-1000 ease-in-out"
-                src="./assets/images/croc.jpg"
+                src="./assets/images/flashs/croco.jpg"
                 alt="croc"
               />
               <p>200€</p>
@@ -337,7 +337,7 @@
             >
               <img
                 class="flash object-cover hover:invert duration-1000 ease-in-out"
-                src="./assets/images/croc.jpg"
+                src="./assets/images/flashs/croco.jpg"
                 alt="croc"
               />
               <p>200€</p>
@@ -347,7 +347,7 @@
             >
               <img
                 class="flash object-cover hover:invert duration-1000 ease-in-out"
-                src="./assets/images/croc.jpg"
+                src="./assets/images/flashs/croco.jpg"
                 alt="croc"
               />
               <p>200€</p>
@@ -357,7 +357,7 @@
             >
               <img
                 class="flash object-cover hover:invert duration-1000 ease-in-out"
-                src="./assets/images/croc.jpg"
+                src="./assets/images/flashs/croco.jpg"
                 alt="croc"
               />
               <p>200€</p>
@@ -367,7 +367,7 @@
             >
               <img
                 class="flash object-cover hover:invert duration-1000 ease-in-out"
-                src="./assets/images/croc.jpg"
+                src="./assets/images/flashs/croco.jpg"
                 alt="croc"
               />
               <p>200€</p>
@@ -377,7 +377,7 @@
             >
               <img
                 class="flash object-cover hover:invert duration-1000 ease-in-out"
-                src="./assets/images/croc.jpg"
+                src="./assets/images/flashs/croco.jpg"
                 alt="croc"
               />
               <p>200€</p>
@@ -387,7 +387,7 @@
             >
               <img
                 class="flash object-cover hover:invert duration-1000 ease-in-out"
-                src="./assets/images/croc.jpg"
+                src="./assets/images/flashs/croco.jpg"
                 alt="croc"
               />
               <p>200€</p>
@@ -406,9 +406,10 @@
             CONTACT
           </h2>
           <form
+            enctype="multipart/form-data"
             class="flex flex-col font-G-Bold w-11/12 sm:w-8/12 lg:w-1/2 mt-5"
             method="post"
-            id="formHome"
+            id="formTattoo"
           >
             <!-- Tattoo choisis -->
             <div class="flex flex-col-reverse items-center my-10">
@@ -417,17 +418,16 @@
                 for="flashChoisi"
                 >Ajouter</label
               >
-              <input
-                type="image"
+              <img
                 class="w-50% mb-5 cursor-default"
-                src="#"
+                src="./assets/images/empty.png"
                 alt="Aperçu du flash voulu"
                 id="previewFlash"
               />
               <input
                 class="hidden"
                 type="file"
-                name="flashChoisi"
+                name="flashImporte"
                 id="flashChoisi"
               />
             </div>
@@ -477,7 +477,7 @@
             ></textarea>
             <p
               class="invisible pt-2 pb-2 text-sm text-gray-400 text-right font-G-Light"
-              id="erreurMessage"
+              id="erreurProjet"
             >
               Veuillez retirer les caractères spéciaux.
             </p>
@@ -487,9 +487,9 @@
               class="border-b border-white bg-transparent placeholder:text-white placeholder:text-xl lg:placeholder:text-2xl text-xl lg:text-2xl text-white pb-2 focus:border-Jblue focus:border-b-2 focus:outline-none"
               placeholder="Emplacement"
               id="emplacmentFlash"
-              name="emplacmentFlash"
+              name="emplacementFlash"
               type="text"
-              pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+"
+              pattern="[a-zA-Z0-9àáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+"
               required
             />
             <p
@@ -548,6 +548,8 @@
                   type="radio"
                   name="firstTattoo"
                   id="ouiFirstTattoo"
+                  value="Oui"
+                  required
                 />
                 <label
                   class="cursor-pointer text-white text-xl mr-1"
@@ -559,18 +561,18 @@
                   type="radio"
                   name="firstTattoo"
                   id="nonFirstTattoo"
+                  value="Non"
                 />
               </div>
             </div>
 
             <!-- Btn envoyer -->
-            <button
-              class="text-white hover:text-Jblue font-G-Ultra text-6xl sm:text-8xl lg:text-9xl scale-y-50 text-left"
+            <input
+              class="text-white hover:text-Jblue font-G-Ultra text-6xl sm:text-8xl lg:text-9xl scale-y-50 text-left cursor-pointer"
               type="submit"
-              id="btnFormHome"
-            >
-              ENVOYER
-            </button>
+              value="ENVOYER"
+              id="btnFormTattoo"
+            />
             <p
               class="invisible pt-5 pb-2 lg:pb-5 text-xl text-white text-center"
               id="validationForm"
@@ -608,7 +610,7 @@
       </button>
       <img
         class="w-80% md:h-60% lg:h-5/6 md:w-auto"
-        src="./assets/#"
+        src=""
         alt="Tatouage d'Omarker"
       />
     </div>
@@ -627,7 +629,7 @@
       </button>
       <img
         class="w-70% md:h-60% lg:h-5/6 md:w-auto"
-        src="./assets/#"
+        src=""
         alt="Flash d'Omarker"
         id="imgModal"
       />

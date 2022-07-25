@@ -3,10 +3,6 @@ const flashs = document.querySelectorAll(".flash");
 const peintureModal = document.querySelector("#peintureModal");
 const btnCloseModal = document.querySelector("#btnCloseModal");
 const imgModal = document.querySelector("#imgModal");
-const nomModal = document.querySelector("#nomModal");
-const tailleModal = document.querySelector("#tailleModal");
-const dateModal = document.querySelector("#dateModal");
-const techModal = document.querySelector("#techModal");
 const menu = document.querySelector("#menuPeinture");
 const navMenu = document.querySelector("#navMenu");
 const nav = document.querySelector("#nav");
@@ -32,22 +28,20 @@ frames.forEach((frame) => {
 });
 
 /* Event pour ouvrir les boites modale pour flash */
+let flashSrc = "";
 flashs.forEach((flash) => {
   flash.addEventListener("click", () => {
     imgModal.src = flash.src;
     flashModal.classList.remove("hidden");
     flashModal.classList.add("flex");
     flashModal.dataset.modal = "on";
+    flashSrc = flash.src;
   });
 
   btnFlash.addEventListener("click", () => {
-    previewFlash.src = flash.src;
+    previewFlash.src = flashSrc;
     window.location.href = "#contact";
   });
-});
-
-previewFlash.addEventListener("click", (event) => {
-  event.preventDefault();
 });
 
 /* Croix pour fermer la boite modal pour tattoo */
@@ -152,5 +146,110 @@ window.addEventListener("scroll", () => {
     nav.classList.remove("text-white");
     navMenu.classList.remove("md:text-white");
     navMenu.classList.add("md:text-black");
+  }
+});
+
+/* Formulaire pour tattoo */
+const formTattoo = document.querySelector("#formTattoo");
+const btnFormTattoo = document.querySelector("#btnFormTattoo");
+/* Tattoo Choisi */
+const inputNomPrenom = document.querySelector("#inputNomPrenom");
+const inputEmail = document.querySelector("#inputEmail");
+const projetFlash = document.querySelector("#projetFlash");
+const emplacmentFlash = document.querySelector("#emplacmentFlash");
+const tailleFlash = document.querySelector("#tailleFlash");
+const budgetFlash = document.querySelector("#budgetFlash");
+const validation = document.querySelector("#validationForm");
+const erreurNomPrenom = document.querySelector("#erreurNomPrenom");
+const erreurEmail = document.querySelector("#erreurEmail");
+const erreurProjet = document.querySelector("#erreurProjet");
+const erreurEmplacement = document.querySelector("#erreurEmplacment");
+const erreurTaille = document.querySelector("#erreurTaille");
+const erreurBudget = document.querySelector("#erreurBudget");
+
+const regleNomPrenom =
+  /^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$/u;
+const regleEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+const regleProjet =
+  /^[a-zA-Z0-9àáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'()\r\n-]+$/u;
+const regleEmplacement =
+  /^[a-zA-Z0-9àáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'()-]+$/u;
+const regleTaille =
+  /^[a-zA-Z0-9àáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'()-]+$/u;
+const regleBudget =
+  /^[a-zA-Z0-9àáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'()-]+$/u;
+
+formTattoo.addEventListener("submit", function (e) {
+  e.preventDefault();
+  let resultatNomPrenom = regleNomPrenom.test(inputNomPrenom.value);
+  let resultatEmail = regleEmail.test(inputEmail.value);
+  let resultatProjet = regleProjet.test(projetFlash.value);
+  let resultatEmplacement = regleEmplacement.test(emplacmentFlash.value);
+  let resultatTaille = regleTaille.test(tailleFlash.value);
+  let resultatBudget = regleBudget.test(budgetFlash.value);
+  let flashChoisi = previewFlash.src;
+
+  if (
+    resultatNomPrenom === true &&
+    resultatEmail === true &&
+    resultatProjet === true &&
+    resultatEmplacement === true &&
+    resultatTaille === true &&
+    resultatBudget === true
+  ) {
+    let formData = new FormData(formTattoo);
+    formData.append("flashChoisi", flashChoisi);
+    let url = "./php/formTattoo.php";
+    fetch(url, {
+      method: "POST",
+      body: formData,
+    })
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        console.log(data);
+        validation.firstChild.nodeValue = data.validation;
+        validation.classList.remove("invisible");
+        return formTattoo.reset();
+      });
+
+    erreurNomPrenom.classList.add("invisible");
+    erreurEmail.classList.add("invisible");
+    erreurProjet.classList.add("invisible");
+    erreurEmplacement.classList.add("invisible");
+    erreurTaille.classList.add("invisible");
+    erreurBudget.classList.add("invisible");
+  }
+  if (resultatNomPrenom === false) {
+    erreurNomPrenom.classList.remove("invisible");
+  } else {
+    erreurNomPrenom.classList.add("invisible");
+  }
+  if (resultatEmail === false) {
+    erreurEmail.classList.remove("invisible");
+  } else {
+    erreurEmail.classList.add("invisible");
+  }
+  if (resultatProjet === false) {
+    erreurProjet.classList.remove("invisible");
+  } else {
+    erreurProjet.classList.add("invisible");
+  }
+
+  if (resultatEmplacement === false) {
+    erreurEmplacement.classList.remove("invisible");
+  } else {
+    erreurEmplacement.classList.add("invisible");
+  }
+  if (resultatTaille === false) {
+    erreurTaille.classList.remove("invisible");
+  } else {
+    erreurTaille.classList.add("invisible");
+  }
+  if (resultatBudget === false) {
+    erreurBudget.classList.remove("invisible");
+  } else {
+    erreurBudget.classList.add("invisible");
   }
 });
