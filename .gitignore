@@ -3,3 +3,6 @@ tailwind.config.js
 package.json
 package-lock.json
 token-insta.php
+composer.json
+composer.lock
+vendor/
