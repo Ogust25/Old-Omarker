@@ -242,156 +242,18 @@
           <div
             class="md:w-80% flex flex-wrap justify-evenly mb-10 mt-20 md:mt-0"
           >
-            <div
-              class="cursor-pointer w-1/3 sm:w-1/4 md:w-20% lg:w-15% md:mx-2 lg:mx-5 mb-5 flex flex-col items-center font-G-Bold"
-            >
-              <img
-                class="flash object-cover hover:invert duration-1000 ease-in-out"
-                src="./assets/images/flashs/croco.jpg"
-                alt="croc"
-              />
-              <p>200€</p>
-            </div>
-            <div
-              class="cursor-pointer w-1/3 sm:w-1/4 md:w-20% lg:w-15% md:mx-2 lg:mx-5 mb-5 flex flex-col items-center font-G-Bold"
-            >
-              <img
-                class="flash object-cover hover:invert duration-1000 ease-in-out"
-                src="./assets/images/flashs/52-3.jpg"
-                alt="croc"
-              />
-              <p>200€</p>
-            </div>
-            <div
-              class="cursor-pointer w-1/3 sm:w-1/4 md:w-20% lg:w-15% md:mx-2 lg:mx-5 mb-5 flex flex-col items-center font-G-Bold"
-            >
-              <img
-                class="flash object-cover hover:invert duration-1000 ease-in-out"
-                src="./assets/images/flashs/56(4).jpg"
-                alt="croc"
-              />
-              <p>200€</p>
-            </div>
-            <div
-              class="cursor-pointer w-1/3 sm:w-1/4 md:w-20% lg:w-15% md:mx-2 lg:mx-5 mb-5 flex flex-col items-center font-G-Bold"
-            >
-              <img
-                class="flash object-cover hover:invert duration-1000 ease-in-out"
-                src="./assets/images/flashs/croco.jpg"
-                alt="croc"
-              />
-              <p>200€</p>
-            </div>
-            <div
-              class="cursor-pointer w-1/3 sm:w-1/4 md:w-20% lg:w-15% md:mx-2 lg:mx-5 mb-5 flex flex-col items-center font-G-Bold"
-            >
-              <img
-                class="flash object-cover hover:invert duration-1000 ease-in-out"
-                src="./assets/images/flashs/croco.jpg"
-                alt="croc"
-              />
-              <p>200€</p>
-            </div>
-            <div
-              class="cursor-pointer w-1/3 sm:w-1/4 md:w-20% lg:w-15% md:mx-2 lg:mx-5 mb-5 flex flex-col items-center font-G-Bold"
-            >
-              <img
-                class="flash object-cover hover:invert duration-1000 ease-in-out"
-                src="./assets/images/flashs/croco.jpg"
-                alt="croc"
-              />
-              <p>200€</p>
-            </div>
-            <div
-              class="cursor-pointer w-1/3 sm:w-1/4 md:w-20% lg:w-15% md:mx-2 lg:mx-5 mb-5 flex flex-col items-center font-G-Bold"
-            >
-              <img
-                class="flash object-cover hover:invert duration-1000 ease-in-out"
-                src="./assets/images/flashs/croco.jpg"
-                alt="croc"
-              />
-              <p>200€</p>
-            </div>
-            <div
-              class="cursor-pointer w-1/3 sm:w-1/4 md:w-20% lg:w-15% md:mx-2 lg:mx-5 mb-5 flex flex-col items-center font-G-Bold"
-            >
-              <img
-                class="flash object-cover hover:invert duration-1000 ease-in-out"
-                src="./assets/images/flashs/croco.jpg"
-                alt="croc"
-              />
-              <p>200€</p>
-            </div>
-            <div
-              class="cursor-pointer w-1/3 sm:w-1/4 md:w-20% lg:w-15% md:mx-2 lg:mx-5 mb-5 flex flex-col items-center font-G-Bold"
-            >
-              <img
-                class="flash object-cover hover:invert duration-1000 ease-in-out"
-                src="./assets/images/flashs/croco.jpg"
-                alt="croc"
-              />
-              <p>200€</p>
-            </div>
-            <div
-              class="cursor-pointer w-1/3 sm:w-1/4 md:w-20% lg:w-15% md:mx-2 lg:mx-5 mb-5 flex flex-col items-center font-G-Bold"
-            >
-              <img
-                class="flash object-cover hover:invert duration-1000 ease-in-out"
-                src="./assets/images/flashs/croco.jpg"
-                alt="croc"
-              />
-              <p>200€</p>
-            </div>
-            <div
-              class="cursor-pointer w-1/3 sm:w-1/4 md:w-20% lg:w-15% md:mx-2 lg:mx-5 mb-5 flex flex-col items-center font-G-Bold"
-            >
-              <img
-                class="flash object-cover hover:invert duration-1000 ease-in-out"
-                src="./assets/images/flashs/croco.jpg"
-                alt="croc"
-              />
-              <p>200€</p>
-            </div>
-            <div
-              class="cursor-pointer w-1/3 sm:w-1/4 md:w-20% lg:w-15% md:mx-2 lg:mx-5 mb-5 flex flex-col items-center font-G-Bold"
-            >
-              <img
-                class="flash object-cover hover:invert duration-1000 ease-in-out"
-                src="./assets/images/flashs/croco.jpg"
-                alt="croc"
-              />
-              <p>200€</p>
-            </div>
-            <div
-              class="cursor-pointer w-1/3 sm:w-1/4 md:w-20% lg:w-15% md:mx-2 lg:mx-5 mb-5 flex flex-col items-center font-G-Bold"
-            >
-              <img
-                class="flash object-cover hover:invert duration-1000 ease-in-out"
-                src="./assets/images/flashs/croco.jpg"
-                alt="croc"
-              />
-              <p>200€</p>
-            </div>
-            <div
-              class="cursor-pointer w-1/3 sm:w-1/4 md:w-20% lg:w-15% md:mx-2 lg:mx-5 mb-5 flex flex-col items-center font-G-Bold"
-            >
-              <img
-                class="flash object-cover hover:invert duration-1000 ease-in-out"
-                src="./assets/images/flashs/croco.jpg"
-                alt="croc"
-              />
-              <p>200€</p>
-            </div>
-            <div
-              class="cursor-pointer w-1/3 sm:w-1/4 md:w-20% lg:w-15% md:mx-2 lg:mx-5 mb-5 flex flex-col items-center font-G-Bold"
-            >
-              <img
-                class="flash object-cover hover:invert duration-1000 ease-in-out"
-                src="./assets/images/flashs/croco.jpg"
-                alt="croc"
-              />
-              <p>200€</p>
-            </div>
+            <?php foreach ($flashs as $flash) { ?>
+              <div
+                class="cursor-pointer w-1/3 sm:w-1/4 md:w-20% lg:w-15% md:mx-2 lg:mx-5 mb-5 flex flex-col items-center font-G-Bold"
+              >
+                <img
+                  class="flash object-cover hover:invert duration-1000 ease-in-out"
+                  src="<?php echo htmlspecialchars($flash['img']); ?>"
+                  alt="Flash de Omarker"
+                />
+                <p><?php echo htmlspecialchars($flash['prix']); ?>€</p>
+              </div>
+            <?php } ?>
           </div>
         </section>
 

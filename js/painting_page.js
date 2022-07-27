@@ -10,6 +10,11 @@ const menu = document.querySelector("#menuPeinture");
 const navMenu = document.querySelector("#navMenu");
 const linkMenu = document.querySelectorAll(".linkMenu");
 
+/* Bloque le clic  droit */
+/* document.addEventListener("contextmenu", function (e){
+  e.preventDefault();
+}, false); */
+
 /* Event pour ouvrir/fermer les boites modale */
 frames.forEach((frame) => {
   frame.addEventListener("click", () => {
