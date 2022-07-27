@@ -336,86 +336,42 @@
               <div
                 class="flex flex-wrap overflow-scroll overflow-x-hidden h-96 scrollbar-thin scrollbar-track-slate-300 hover:scrollbar-thumb-zinc-900"
               >
-                <div class="mb-5 mr-5 w-45%">
-                  <p class="font-G-Black">2022</p>
-                  <p class="font-G-Medium">L'Expo Urbaine</p>
-                  <p class="font-G-Bold">Bourgoin-Jallieu, France</p>
-                </div>
-                <div class="mb-5 mr-5 w-45%">
-                  <p class="font-G-Black">2021</p>
-                  <p class="font-G-Medium">Peinture Fraiche Festival</p>
-                  <p class="font-G-Bold">Lyon, France</p>
-                </div>
-                <div class="mb-5 mr-5 w-45%">
-                  <p class="font-G-Black">2021</p>
-                  <p class="font-G-Medium">Starting Block</p>
-                  <p class="font-G-Bold">Lyon, France (Expo Solo)</p>
-                </div>
-                <div class="mb-5 mr-5 w-45%">
-                  <p class="font-G-Black">2021</p>
-                  <p class="font-G-Medium">Second Degré</p>
-                  <p class="font-G-Bold">Lyon, France</p>
-                </div>
-                <div class="mb-5 mr-5 w-45%">
-                  <p class="font-G-Black">2020</p>
-                  <p class="font-G-Medium">Small Session</p>
-                  <p class="font-G-Bold">Lyon, France</p>
-                </div>
-                <div class="mb-5 mr-5 w-45%">
-                  <p class="font-G-Black">2019</p>
-                  <p class="font-G-Medium">Live Painting at Convergences</p>
-                  <p class="font-G-Bold">Caluire, France</p>
-                </div>
-                <div class="mb-5 mr-5 w-45%">
-                  <p class="font-G-Black">2019</p>
-                  <p class="font-G-Medium">MX France au Jardin Perché</p>
-                  <p class="font-G-Bold">Caluire, France</p>
-                </div>
-                <div class="mb-5 mr-5 w-45%">
-                  <p class="font-G-Black">2019</p>
-                  <p class="font-G-Medium">Projet Vénus</p>
-                  <p class="font-G-Bold">Décines-Charpieu, France</p>
-                </div>
-                <div class="mb-5 mr-5 w-45%">
-                  <p class="font-G-Black">2019</p>
-                  <p class="font-G-Medium">Print-Hop Session #3</p>
-                  <p class="font-G-Bold">Lyon, France</p>
-                </div>
-                <div class="mb-5 mr-5 w-45%">
-                  <p class="font-G-Black">2019</p>
-                  <p class="font-G-Medium">Print-Hop Session #2</p>
-                  <p class="font-G-Bold">Lyon, France</p>
-                </div>
-                <div class="mb-5 mr-5 w-45%">
-                  <p class="font-G-Black">2018</p>
-                  <p class="font-G-Medium">Print-Hop Session #1</p>
-                  <p class="font-G-Bold">Lyon, France</p>
-                </div>
+                <?php foreach ($exposPasse as $expoPasse) { ?>
+                  <div class="mb-5 mr-5 w-45%">
+                    <p class="font-G-Black"><?php echo htmlspecialchars($expoPasse['year']); ?></p>
+                    <p class="font-G-Medium"><?php echo htmlspecialchars($expoPasse['nom']); ?></p>
+                    <p class="font-G-Bold"><?php echo htmlspecialchars($expoPasse['lieu']); ?></p>
+                  </div>
+                <?php } ?>
               </div>
             </div>
             <div class="pb-10 md:40% lg:w-15% md:mr-20">
               <h2 class="text-2xl pb-5">RESIDENCES</h2>
               <div>
-                <div class="mb-5">
-                  <p class="font-G-Black">2022</p>
-                  <p class="font-G-Medium">Superposition</p>
-                  <p class="font-G-Bold">Lyon, France</p>
-                </div>
-                <div class="mb-5">
-                  <p class="font-G-Black">2021</p>
-                  <p class="font-G-Medium">Boomrang</p>
-                  <p class="font-G-Bold">Lyon, France</p>
-                </div>
-                <div class="mb-5">
-                  <p class="font-G-Black">2020</p>
-                  <p class="font-G-Medium">Superposition</p>
-                  <p class="font-G-Bold">Lyon, France</p>
-                </div>
+                <?php foreach ($exposResidence as $expoResidence) { ?>
+                  <div class="mb-5 mr-5 w-45%">
+                    <p class="font-G-Black"><?php echo htmlspecialchars($expoResidence['year']); ?></p>
+                    <p class="font-G-Medium"><?php echo htmlspecialchars($expoResidence['nom']); ?></p>
+                    <p class="font-G-Bold"><?php echo htmlspecialchars($expoResidence['lieu']); ?></p>
+                  </div>
+                <?php } ?>
               </div>
             </div>
             <div class="pb-10 md:40% lg:w-15%">
               <h2 class="text-2xl pb-5">EXPOSITION A VENIR</h2>
-              <p>Actuellement aucune exposition n'est à venir.</p>
+              <?php if (count($exposFutur) >= 1) { ?>
+                <div>
+                  <?php foreach ($exposFutur as $expoFutur) { ?>
+                    <div class="mb-5 mr-5 w-45%">
+                      <p class="font-G-Black"><?php echo htmlspecialchars($expoFutur['year']); ?></p>
+                      <p class="font-G-Medium"><?php echo htmlspecialchars($expoFutur['nom']); ?></p>
+                      <p class="font-G-Bold"><?php echo htmlspecialchars($expoFutur['lieu']); ?></p>
+                    </div>
+                  <?php } ?>
+                </div>
+              <?php } else { ?>
+                <p>Actuellement aucune exposition n'est à venir.</p>
+              <?php } ?>
             </div>
           </div>
         </section>
