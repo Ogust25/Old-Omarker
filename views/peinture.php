@@ -71,7 +71,7 @@
           <ul
             class="font-bebas text-2xl tracking-widest text-white md:text-black p-8 md:p-0"
           >
-            <li>
+            <li class='active'>
               <a class="linkMenu hover:font-bold" href="#mur">MUR</a>
             </li>
             <li>
@@ -108,7 +108,7 @@
         <!-- Galerie Mur -->
         <section
           id="mur"
-          class="relative top-20 md:top-28 flex flex-wrap md:block md:h-1900 mb-20 md:mb-96"
+          class="scrollSpy relative top-20 md:top-28 flex flex-wrap md:block md:h-1900 mb-20 md:mb-96"
         >
           <img
             src="assets/images/bg_insta.jpg"
@@ -184,7 +184,7 @@
         <!-- Galerie Oeuvres -->
         <section
           id="oeuvres"
-          class="relative top-28 flex flex-wrap md:block md:h-1000 lg:h-1900 mb-20 md:mb-96"
+          class="scrollSpy relative top-28 flex flex-wrap md:block md:h-1000 lg:h-1900 mb-20 md:mb-96"
         >
           <img
             src="<?php echo htmlspecialchars($oeuvres[0]['img']); ?>"
@@ -326,7 +326,7 @@
         <!-- Exposition -->
         <section
           id="exposition"
-          class="md:h-screen bg-bg-main bg-cover bg-fixed pt-20 font-G-Black text-sm md:text-md flex justify-center lg:items-center"
+          class="scrollSpy md:h-screen bg-bg-main bg-cover bg-fixed pt-20 font-G-Black text-sm md:text-md flex justify-center lg:items-center"
         >
           <div
             class="md:pl-10% w-95% md:w-full flex flex-col md:flex-row md:justify-center md:items-start h-80% flex-wrap"
@@ -378,7 +378,7 @@
         <!-- Galerie Workshop -->
         <section
           id="workshop"
-          class="relative top-28 flex flex-wrap md:block md:h-1000 lg:h-1900 mb-20 md:mb-96"
+          class="scrollSpy relative top-28 flex flex-wrap md:block md:h-1000 lg:h-1900 mb-20 md:mb-96"
         >
           <img
             src="assets/images/oeuvresOmarker/Focus.jpg"

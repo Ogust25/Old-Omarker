@@ -135,20 +135,6 @@ flashFile.addEventListener("change", (event) => {
   };
 });
 
-/* Evenement au scroll */
-window.addEventListener("scroll", () => {
-  let scrollY = this.scrollY;
-  if (scrollY >= 2600) {
-    nav.classList.add("text-white");
-    navMenu.classList.add("md:text-white");
-    navMenu.classList.remove("md:text-black");
-  } else {
-    nav.classList.remove("text-white");
-    navMenu.classList.remove("md:text-white");
-    navMenu.classList.add("md:text-black");
-  }
-});
-
 /* Formulaire pour tattoo */
 const formTattoo = document.querySelector("#formTattoo");
 const btnFormTattoo = document.querySelector("#btnFormTattoo");
@@ -251,5 +237,39 @@ formTattoo.addEventListener("submit", function (e) {
     erreurBudget.classList.remove("invisible");
   } else {
     erreurBudget.classList.add("invisible");
+  }
+});
+
+
+/* Spy Scroll */
+const spyScrolling = () => {
+  const sections = document.querySelectorAll( '.scrollSpy' );
+
+  window.onscroll = () => {
+    const scrollPos = document.documentElement.scrollTop || document.body.scrollTop;
+
+    for ( let s in sections )
+      if ( sections.hasOwnProperty( s ) && sections[ s ].offsetTop <= scrollPos ) {
+        const id = sections[ s ].id;
+        document.querySelector( '.active' ).classList.remove( 'active' );
+        document.querySelector( `a[href*=${ id }]` ).parentNode.classList.add( 'active' );
+      }
+  } 
+}
+
+spyScrolling();
+
+
+/* Evenement au scroll */
+window.addEventListener("scroll", () => {
+  const target = document.querySelector('#spyTarget');
+  if (target.classList.contains('active')) {
+    nav.classList.add("text-white");
+    navMenu.classList.add("md:text-white");
+    navMenu.classList.remove("md:text-black");
+  } else {
+    nav.classList.remove("text-white");
+    navMenu.classList.remove("md:text-white");
+    navMenu.classList.add("md:text-black");
   }
 });

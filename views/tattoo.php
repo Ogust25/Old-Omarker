@@ -69,13 +69,13 @@
           id="navMenu"
         >
           <ul class="font-bebas text-2xl tracking-widest p-8 md:p-0">
-            <li>
-              <a class="linkMenu hover:font-bold" href="#tattoo">TATTOO</a>
+            <li class="active">
+              <a class="linkMenu hover:font-bold" href="#tatouage">TATTOO</a>
             </li>
             <li>
               <a class="linkMenu hover:font-bold" href="#flash">FLASH</a>
             </li>
-            <li>
+            <li id='spyTarget'>
               <a class="hover:font-bold" href="#contact">CONTACT</a>
             </li>
             <li>
@@ -97,8 +97,8 @@
         </button>
         <!-- Galerie Oeuvres -->
         <section
-          id="tattoo"
-          class="relative top-28 flex flex-wrap md:block md:h-1000 lg:h-1900 mb-20 md:mb-96"
+          id="tatouage"
+          class="scrollSpy relative top-28 flex flex-wrap md:block md:h-1000 lg:h-1900 mb-20 md:mb-96"
         >
           <img
             src="assets/images/oeuvresOmarker/Focus.jpg"
@@ -238,7 +238,7 @@
         </section>
 
         <!-- Flash -->
-        <section class="flex justify-center" id="flash">
+        <section class="scrollSpy flex justify-center" id="flash">
           <div
             class="md:w-80% flex flex-wrap justify-evenly mb-10 mt-20 md:mt-0"
           >
@@ -259,7 +259,7 @@
 
         <!-- Formulaire tattoo -->
         <section
-          class="h-full bg-black relative flex flex-col items-center pb-20"
+          class="scrollSpy h-full bg-black relative flex flex-col items-center pb-20"
           id="contact"
         >
           <h2

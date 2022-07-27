@@ -71,7 +71,7 @@
           <ul
             class="font-bebas text-2xl tracking-widest text-white md:text-black p-8 md:p-0"
           >
-            <li>
+            <li class='active'>
               <a class="linkMenu hover:font-bold" href="#dirArt">DIRECTION ARTISTIQUE</a>
             </li>
             <li>
@@ -92,7 +92,7 @@
         <!-- Galerie Direction Artistique -->
         <section
           id="dirArt"
-          class="relative top-28 flex flex-wrap md:block md:h-1000 lg:h-1900 mb-20 md:mb-96"
+          class="scrollSpy relative top-28 flex flex-wrap md:block md:h-1000 lg:h-1900 mb-20 md:mb-96"
         >
           <img
             src="assets/images/oeuvresOmarker/Focus.jpg"
@@ -233,7 +233,7 @@
         <!-- Galerie identité visuelle -->
         <section
           id="idVisuelle"
-          class="relative top-28 flex flex-wrap md:block md:h-1000 lg:h-1900 mb-20 md:mb-96"
+          class="scrollSpy relative top-28 flex flex-wrap md:block md:h-1000 lg:h-1900 mb-20 md:mb-96"
         >
           <img
             src="assets/images/oeuvresOmarker/Focus.jpg"
@@ -375,7 +375,7 @@
         <!-- Print -->
         <section
           id="print"
-          class="relative top-28 flex flex-wrap md:block md:h-1000 lg:h-1900 mb-20 md:mb-96"
+          class="scrollSpy relative top-28 flex flex-wrap md:block md:h-1000 lg:h-1900 mb-20 md:mb-96"
         >
           <img
             src="assets/images/oeuvresOmarker/Focus.jpg"
@@ -494,6 +494,6 @@
         <p class="font-G-Bold" id="dateModal">Date</p>
       </div>
     </div>
-    <script src="./js/painting_page.js"></script>
+    <script src="./js/graphisme_page.js"></script>
   </body>
 </html>
