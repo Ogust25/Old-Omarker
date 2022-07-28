@@ -1,8 +1,9 @@
-const frames = document.querySelectorAll(".peinture");
+const frames = document.querySelectorAll(".tattoo");
 const flashs = document.querySelectorAll(".flash");
 const peintureModal = document.querySelector("#peintureModal");
 const btnCloseModal = document.querySelector("#btnCloseModal");
 const imgModal = document.querySelector("#imgModal");
+const imgModalFlash = document.querySelector("#imgModalFlash");
 const menu = document.querySelector("#menuPeinture");
 const navMenu = document.querySelector("#navMenu");
 const nav = document.querySelector("#nav");
@@ -20,10 +21,6 @@ frames.forEach((frame) => {
     peintureModal.classList.remove("hidden");
     peintureModal.classList.add("flex");
     peintureModal.dataset.modal = "on";
-    nomModal.childNodes[0].nodeValue = frame.dataset.nom;
-    tailleModal.childNodes[0].nodeValue = frame.dataset.taille;
-    dateModal.childNodes[0].nodeValue = frame.dataset.date;
-    techModal.childNodes[0].nodeValue = frame.dataset.tech;
   });
 });
 
@@ -31,7 +28,7 @@ frames.forEach((frame) => {
 let flashSrc = "";
 flashs.forEach((flash) => {
   flash.addEventListener("click", () => {
-    imgModal.src = flash.src;
+    imgModalFlash.src = flash.src;
     flashModal.classList.remove("hidden");
     flashModal.classList.add("flex");
     flashModal.dataset.modal = "on";

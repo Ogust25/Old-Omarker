@@ -95,145 +95,89 @@
         >
           MENU
         </button>
-        <!-- Galerie Oeuvres -->
+        <!-- Galerie Tattoo -->
         <section
           id="tatouage"
           class="scrollSpy relative top-28 flex flex-wrap md:block md:h-1000 lg:h-1900 mb-20 md:mb-96"
         >
           <img
-            src="assets/images/oeuvresOmarker/Focus.jpg"
-            class="peinture hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-6% md:left-16%"
-            alt="Oeuvre intitulée Focus"
-            data-nom="Focus"
-            data-taille="30x40cm"
-            data-tech="Technique mixte sur bois"
-            data-date="2022"
+            src="<?php echo htmlspecialchars($tattoos[0]['img']); ?>"
+            class="tattoo hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-6% md:left-16%"
+            alt="Tatouage de Omarker"
           />
           <img
-            src="assets/images/oeuvresOmarker/Algorithme.jpg"
-            class="peinture hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-8% md:left-40%"
-            alt="Oeuvre intitulée Algorithme"
+            src="<?php echo htmlspecialchars($tattoos[1]['img']); ?>"
+            class="tattoo hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-8% md:left-40%"
+            alt="Tatouage de Omarker"
             data-nom="Algorithme"
             data-taille="60x80cm"
             data-tech="Technique mixte sur toile"
             data-date="2021"
           />
           <img
-            src="assets/images/oeuvresOmarker/Algorithmique.jpg"
-            class="peinture hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:right-14% md:top-0"
-            alt="Oeuvre intitulée Algorithmique"
-            data-nom="Algorithmique"
-            data-taille="50x60cm"
-            data-tech="Technique mixte sur toile"
-            data-date="2021"
+            src="<?php echo htmlspecialchars($tattoos[2]['img']); ?>"
+            class="tattoo hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:right-14% md:top-0"
+            alt="Tatouage de Omarker"
           />
           <img
-            src="assets/images/oeuvresOmarker/Concrete2.jpg"
-            class="peinture hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-15% md:absolute md:right-3% md:top-13%"
-            alt="Oeuvre intitulée Concrete"
-            data-nom="Concrete 2"
-            data-taille="60x80cm"
-            data-tech="Technique mixte sur toile"
-            data-date="2021"
+            src="<?php echo htmlspecialchars($tattoos[3]['img']); ?>"
+            class="tattoo hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-15% md:absolute md:right-3% md:top-13%"
+            alt="Tatouage de Omarker"
           />
           <img
-            src="assets/images/oeuvresOmarker/FRAGMENT.jpg"
-            class="peinture hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-25% md:absolute md:top-35% md:left-13% lg:left-10%"
-            alt="Oeuvre intitulée Fragment"
-            data-nom="Fragment"
-            data-taille="60x80cm"
-            data-tech="Technique mixte sur toile"
-            data-date="2021"
+            src="<?php echo htmlspecialchars($tattoos[4]['img']); ?>"
+            class="tattoo hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-25% md:absolute md:top-35% md:left-13% lg:left-10%"
+            alt="Tatouage de Omarker"
           />
           <img
-            src="assets/images/oeuvresOmarker/Start.jpg"
-            class="peinture hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-35% md:absolute md:top-33% lg:top-28% md:right-20%"
-            alt="Oeuvre intitulée Start"
-            data-nom="Start"
-            data-taille="60x80cm"
-            data-tech="Technique mixte sur toile"
-            data-date="2021"
+            src="<?php echo htmlspecialchars($tattoos[5]['img']); ?>"
+            class="tattoo hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-35% md:absolute md:top-33% lg:top-28% md:right-20%"
+            alt="Tatouage de Omarker"
           />
           <img
-            src="assets/images/oeuvresOmarker/FragmentDeTerrain1.jpg"
-            class="peinture hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-65% lg:top-53% md:left-2%"
-            alt="Oeuvre intitulée Fragment De Terrain"
-            data-nom="Fragment De Terrain"
-            data-taille="60x80cm"
-            data-tech="Technique mixte sur toile"
-            data-date="2021"
+            src="<?php echo htmlspecialchars($tattoos[6]['img']); ?>"
+            class="tattoo hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-65% lg:top-53% md:left-2%"
+            alt="Tatouage de Omarker"
           />
           <img
-            src="assets/images/oeuvresOmarker/HeureBleue.jpg"
-            class="peinture hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-14% md:absolute md:top-47% lg:top-48% md:right-2%"
-            alt="Oeuvre intitulée Heure Bleue"
-            data-nom="Heure Bleue"
-            data-taille="60x80cm"
-            data-tech="Technique mixte sur bois"
-            data-date="2022"
+            src="<?php echo htmlspecialchars($tattoos[7]['img']); ?>"
+            class="tattoo hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-14% md:absolute md:top-47% lg:top-48% md:right-2%"
+            alt="Tatouage de Omarker"
           />
           <img
-            src="assets/images/oeuvresOmarker/NuitD_orage.jpg"
-            class="peinture hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% lg:w-18% md:absolute md:top-70% lg:top-65% md:left-23%"
-            alt="Oeuvre intitulée Nuit d'orage"
-            data-nom="Nuit d'orage"
-            data-taille="60x80cm"
-            data-tech="Technique mixte sur bois"
-            data-date="2022"
+            src="<?php echo htmlspecialchars($tattoos[8]['img']); ?>"
+            class="tattoo hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% lg:w-18% md:absolute md:top-70% lg:top-65% md:left-23%"
+            alt="Tatouage de Omarker"
           />
           <img
-            src="assets/images/oeuvresOmarker/Variable1-2.jpg"
-            class="peinture hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-75% lg:top-75% md:right-34% lg:right-40%"
-            alt="Oeuvre intitulée Variable"
-            data-nom="Variable"
-            data-taille="60x80cm"
-            data-tech="Technique mixte sur bois"
-            data-date="2022"
+            src="<?php echo htmlspecialchars($tattoos[9]['img']); ?>"
+            class="tattoo hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-75% lg:top-75% md:right-34% lg:right-40%"
+            alt="Tatouage de Omarker"
           />
           <img
-            src="assets/images/oeuvresOmarker/Trajectoire1.jpg"
-            class="peinture hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-70% lg:top-70% md:right-9%"
-            alt="Oeuvre intitulée Trajectoire"
-            data-nom="Trajectoire"
-            data-taille="60x80cm"
-            data-tech="Technique mixte sur toile"
-            data-date="2021"
+            src="<?php echo htmlspecialchars($tattoos[10]['img']); ?>"
+            class="tattoo hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-70% lg:top-70% md:right-9%"
+            alt="Tatouage de Omarker"
           />
           <img
-            src="assets/images/oeuvresOmarker/Variation.jpg"
-            class="peinture hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-95% lg:top-80% md:left-3%"
-            alt="Oeuvre intitulée Variation"
-            data-nom="Variation"
-            data-taille="60x80cm"
-            data-tech="Technique mixte sur bois"
-            data-date="2022"
+            src="<?php echo htmlspecialchars($tattoos[11]['img']); ?>"
+            class="tattoo hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-95% lg:top-80% md:left-3%"
+            alt="Tatouage de Omarker"
           />
           <img
-            src="assets/images/oeuvresOmarker/VapeurToxique.jpg"
-            class="peinture hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-100% lg:top-88% md:left-22% lg:left-19%"
-            alt="Oeuvre intitulée Vapeur Toxique"
-            data-nom="Vapeur Toxique"
-            data-taille="21x29.7cm"
-            data-tech="Technique mixte sur papier"
-            data-date="2022"
+            src="<?php echo htmlspecialchars($tattoos[12]['img']); ?>"
+            class="tattoo hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-100% lg:top-88% md:left-22% lg:left-19%"
+            alt="Tatouage de Omarker"
           />
           <img
-            src="assets/images/oeuvresOmarker/Beton2.jpg"
-            class="peinture hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-95% lg:top-90% md:right-25%"
-            alt="Oeuvre intitulée Beton"
-            data-nom="Beton"
-            data-taille="30x40"
-            data-tech="Technique mixte sur beton"
-            data-date="2021"
+            src="<?php echo htmlspecialchars($tattoos[13]['img']); ?>"
+            class="tattoo hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-95% lg:top-90% md:right-25%"
+            alt="Tatouage de Omarker"
           />
           <img
-            src="assets/images/oeuvresOmarker/MecaniqueOrganique.jpg"
-            class="peinture hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-15% md:absolute md:top-90% lg:top-94% md:right-5%"
-            alt="Oeuvre intitulée Mecanique Organique"
-            data-nom="Mecanique Organique"
-            data-taille="29,7x42cm"
-            data-tech="Technique mixte sur papier"
-            data-date="2020"
+            src="<?php echo htmlspecialchars($tattoos[14]['img']); ?>"
+            class="tattoo hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-15% md:absolute md:top-90% lg:top-94% md:right-5%"
+            alt="Tatouage de Omarker"
           />
         </section>
 
@@ -474,6 +418,7 @@
         class="w-80% md:h-60% lg:h-5/6 md:w-auto"
         src=""
         alt="Tatouage d'Omarker"
+        id="imgModal"
       />
     </div>
 
@@ -493,7 +438,7 @@
         class="w-70% md:h-60% lg:h-5/6 md:w-auto"
         src=""
         alt="Flash d'Omarker"
-        id="imgModal"
+        id="imgModalFlash"
       />
       <button
         class="bg-white p-2 rounded-full cursor-pointer hover:text-Jblue mt-5 font-G-Bold"
