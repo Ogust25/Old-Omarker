@@ -111,73 +111,78 @@
           class="scrollSpy relative top-20 md:top-28 flex flex-wrap md:block md:h-1900 mb-20 md:mb-96"
         >
           <img
-            src="assets/images/bg_insta.jpg"
-            class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-50% md:w-25% md:absolute md:top-8% md:left-40%"
+            src="<?php echo htmlspecialchars($murs[0]['img']); ?>"
+            class="tattoo hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-6% md:left-16%"
             alt="Mur peint par Omarker"
           />
           <img
-            src="assets/images/bg_insta.jpg"
-            class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-50% md:w-20% md:absolute md:right-14% md:top-0 invert"
+            src="<?php echo htmlspecialchars($murs[1]['img']); ?>"
+            class="tattoo hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-8% md:left-40%"
             alt="Mur peint par Omarker"
           />
           <img
-            src="assets/images/bg_insta.jpg"
-            class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-50% md:w-20% md:absolute md:right-3% md:top-13% invert"
+            src="<?php echo htmlspecialchars($murs[2]['img']); ?>"
+            class="tattoo hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:right-14% md:top-0"
             alt="Mur peint par Omarker"
           />
           <img
-            src="assets/images/bg_insta.jpg"
-            class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-50% md:w-21% md:absolute md:top-6% md:left-16%"
+            src="<?php echo htmlspecialchars($murs[3]['img']); ?>"
+            class="tattoo hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-15% md:absolute md:right-3% md:top-13%"
             alt="Mur peint par Omarker"
           />
           <img
-            src="assets/images/bg_insta.jpg"
-            class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-50% md:w-40% md:absolute md:top-28% md:right-20%"
+            src="<?php echo htmlspecialchars($murs[4]['img']); ?>"
+            class="tattoo hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-25% md:absolute md:top-35% md:left-13% lg:left-10%"
             alt="Mur peint par Omarker"
           />
           <img
-            src="assets/images/bg_insta.jpg"
-            class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-50% md:w-30% md:absolute md:top-23% md:left-12% invert"
+            src="<?php echo htmlspecialchars($murs[5]['img']); ?>"
+            class="tattoo hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-35% md:absolute md:top-33% lg:top-28% md:right-20%"
             alt="Mur peint par Omarker"
           />
           <img
-            src="assets/images/bg_insta.jpg"
-            class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-50% md:w-21% md:absolute md:top-53% md:left-2% invert"
+            src="<?php echo htmlspecialchars($murs[6]['img']); ?>"
+            class="tattoo hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-65% lg:top-53% md:left-2%"
             alt="Mur peint par Omarker"
           />
           <img
-            src="assets/images/bg_insta.jpg"
-            class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-50% md:w-19% md:absolute md:top-48% md:right-2%"
+            src="<?php echo htmlspecialchars($murs[7]['img']); ?>"
+            class="tattoo hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-14% md:absolute md:top-47% lg:top-48% md:right-2%"
             alt="Mur peint par Omarker"
           />
           <img
-            src="assets/images/bg_insta.jpg"
-            class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-50% md:w-23% md:absolute md:top-65% md:left-23%"
+            src="<?php echo htmlspecialchars($murs[8]['img']); ?>"
+            class="tattoo hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% lg:w-18% md:absolute md:top-70% lg:top-65% md:left-23%"
             alt="Mur peint par Omarker"
           />
           <img
-            src="assets/images/bg_insta.jpg"
-            class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-50% md:w-25% md:absolute md:top-70% md:right-9% invert"
+            src="<?php echo htmlspecialchars($murs[9]['img']); ?>"
+            class="tattoo hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-75% lg:top-75% md:right-34% lg:right-40%"
             alt="Mur peint par Omarker"
           />
           <img
-            src="assets/images/bg_insta.jpg"
-            class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-50% md:w-20% md:absolute md:top-75% md:right-40% invert"
+            src="<?php echo htmlspecialchars($murs[10]['img']); ?>"
+            class="tattoo hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-70% lg:top-70% md:right-9%"
             alt="Mur peint par Omarker"
           />
           <img
-            src="assets/images/bg_insta.jpg"
-            class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-50% md:w-20% md:absolute md:top-80% md:left-3%"
+            src="<?php echo htmlspecialchars($murs[11]['img']); ?>"
+            class="tattoo hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-95% lg:top-80% md:left-3%"
             alt="Mur peint par Omarker"
           />
           <img
-            src="assets/images/bg_insta.jpg"
-            class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-50% md:w-20% md:absolute md:top-88% md:left-19%"
+            src="<?php echo htmlspecialchars($murs[12]['img']); ?>"
+            class="tattoo hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-100% lg:top-88% md:left-22% lg:left-19%"
             alt="Mur peint par Omarker"
           />
           <img
-            src="assets/images/bg_insta.jpg"
-            class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-50% md:w-25% md:absolute md:top-90% md:right-25% invert"
+            src="<?php echo htmlspecialchars($murs[13]['img']); ?>"
+            class="tattoo hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-95% lg:top-90% md:right-25%"
+            alt="Mur peint par Omarker"
+          />
+          <img
+            src="<?php echo htmlspecialchars($murs[14]['img']); ?>"
+            class="tattoo hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-15% md:absolute md:top-90% lg:top-94% md:right-5%"
             alt="Mur peint par Omarker"
           />
         </section>

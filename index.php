@@ -15,6 +15,9 @@ switch ($url[2]) {
     case 'graphisme' :
         require __DIR__ . '/controllers/graphisme.php';
         break;
+    case 'backoffice' :
+        require __DIR__ . '/views/backoffice/home.php';
+        break;
     default:
         http_response_code(404);
         require __DIR__ . '/views/404.html';

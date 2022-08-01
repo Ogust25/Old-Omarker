@@ -109,10 +109,6 @@
             src="<?php echo htmlspecialchars($tattoos[1]['img']); ?>"
             class="tattoo hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-8% md:left-40%"
             alt="Tatouage de Omarker"
-            data-nom="Algorithme"
-            data-taille="60x80cm"
-            data-tech="Technique mixte sur toile"
-            data-date="2021"
           />
           <img
             src="<?php echo htmlspecialchars($tattoos[2]['img']); ?>"

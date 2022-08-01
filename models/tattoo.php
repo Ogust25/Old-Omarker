@@ -1,8 +1,5 @@
 <?php
 
-/* Connexion pdo */
-include "./models/db_login.php";
-
 $stmt = $db->prepare('SELECT `image`.img FROM tattoo
                         INNER JOIN `image` ON `image`.id_image = tattoo.id_image
                         WHERE tattoo.`id_type-tattoo` = 1');

@@ -1,8 +1,5 @@
 <?php
 
-/* Connexion pdo */
-include "./models/db_login.php";
-
 $stmt = $db->prepare('SELECT nom, `year`.`year`, lieu.lieu FROM expo
                         INNER JOIN `year` ON `year`.id_year = expo.id_year
                         INNER JOIN lieu ON lieu.id_lieu = expo.id_lieu
