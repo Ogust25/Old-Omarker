@@ -35,7 +35,7 @@ btnGraphisme.addEventListener("click", () => {
 const contentDiv = document.querySelector("#content");
 const btnMur = document.querySelector("#btnMur");
 btnMur.addEventListener("click", () => {
-  callController("galerie");
+  callGalerie("mur");
 });
 
 const btnOeuvre = document.querySelector("#btnOeuvre");
@@ -50,13 +50,54 @@ btnExpo.addEventListener("click", () => {
 
 const btnWorkshop = document.querySelector("#btnWorkshop");
 btnWorkshop.addEventListener("click", () => {
-  callController("galerie");
+  callGalerie("workshop");
+});
+
+const btnTatouage = document.querySelector("#btnTatouage");
+btnTatouage.addEventListener("click", () => {
+  callGalerie("tattoo");
+});
+
+const btnFlash = document.querySelector("#btnFlash");
+btnFlash.addEventListener("click", () => {
+  callController("flash");
+});
+
+const btnDirArt = document.querySelector("#btnDirArt");
+btnDirArt.addEventListener("click", () => {
+  callGalerie("dirart");
+});
+
+const btnIdVisu = document.querySelector("#btnIdVisu");
+btnIdVisu.addEventListener("click", () => {
+  callGalerie("idvisu");
+});
+
+const btnPrint = document.querySelector("#btnPrint");
+btnPrint.addEventListener("click", () => {
+  callGalerie("print");
 });
 
 function callController(nom) {
   let url = `./controllers/backoffice_${nom}.php`;
   fetch(url, {
     method: "POST",
+  })
+    .then((response) => {
+      return response.text();
+    })
+    .then((data) => {
+      contentDiv.innerHTML = data;
+    });
+}
+
+function callGalerie(nom) {
+  let formData = new FormData();
+  formData.append("nom", nom);
+  let url = `./controllers/backoffice_galerie.php`;
+  fetch(url, {
+    method: "POST",
+    body: formData,
   })
     .then((response) => {
       return response.text();
