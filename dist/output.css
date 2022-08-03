@@ -1093,19 +1093,19 @@ video {
 }
 
 .bg-bg-main {
-  background-image: url('../assets/images/background.jpg');
+  background-image: url('../assets/images/background.webp');
 }
 
 .bg-insta {
-  background-image: url('../assets/images/bg_insta.jpg');
+  background-image: url('../assets/images/bg_insta.webp');
 }
 
 .bg-bio {
-  background-image: url('../assets/images/photo_bio.jpg');
+  background-image: url('../assets/images/photo_bio.webp');
 }
 
 .bg-neg {
-  background-image: url('../assets/images/bg_neg.jpg');
+  background-image: url('../assets/images/bg_neg.webp');
 }
 
 .bg-cover {
@@ -1398,9 +1398,21 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.hover\:scale-100:hover {
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .hover\:scale-150:hover {
   --tw-scale-x: 1.5;
   --tw-scale-y: 1.5;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:scale-125:hover {
+  --tw-scale-x: 1.25;
+  --tw-scale-y: 1.25;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 

@@ -11,7 +11,7 @@ fetch("./php/token-insta.php").then((response) =>
         alt: "Post instagram d'Omarker",
         id: `imgInsta${i}`,
         class:
-          "arrInsta cursor-pointer sm:w-1/6 w-32 object-cover mx-3 my-3 hover:grayscale hover:invert hover:scale-150 ease-in-out duration-1000",
+          "arrInsta cursor-pointer sm:w-1/6 w-32 object-cover mx-3 my-3 hover:grayscale hover:invert hover:scale-125 ease-in-out duration-1000",
         "data-link": data.data[i].permalink,
       });
       instaContainer.insertBefore(imgInsta, null);

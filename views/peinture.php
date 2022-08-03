@@ -112,77 +112,77 @@
         >
           <img
             src="<?php echo htmlspecialchars($murs[0]['img']); ?>"
-            class="tattoo hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-6% md:left-16%"
+            class="peinture hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-6% md:left-16%"
             alt="Mur peint par Omarker"
           />
           <img
             src="<?php echo htmlspecialchars($murs[1]['img']); ?>"
-            class="tattoo hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-8% md:left-40%"
+            class="peinture hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-8% md:left-40%"
             alt="Mur peint par Omarker"
           />
           <img
             src="<?php echo htmlspecialchars($murs[2]['img']); ?>"
-            class="tattoo hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:right-14% md:top-0"
+            class="peinture hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:right-14% md:top-0"
             alt="Mur peint par Omarker"
           />
           <img
             src="<?php echo htmlspecialchars($murs[3]['img']); ?>"
-            class="tattoo hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-15% md:absolute md:right-3% md:top-13%"
+            class="peinture hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-15% md:absolute md:right-3% md:top-13%"
             alt="Mur peint par Omarker"
           />
           <img
             src="<?php echo htmlspecialchars($murs[4]['img']); ?>"
-            class="tattoo hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-25% md:absolute md:top-35% md:left-13% lg:left-10%"
+            class="peinture hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-25% md:absolute md:top-35% md:left-13% lg:left-10%"
             alt="Mur peint par Omarker"
           />
           <img
             src="<?php echo htmlspecialchars($murs[5]['img']); ?>"
-            class="tattoo hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-35% md:absolute md:top-33% lg:top-28% md:right-20%"
+            class="peinture hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-35% md:absolute md:top-33% lg:top-28% md:right-20%"
             alt="Mur peint par Omarker"
           />
           <img
             src="<?php echo htmlspecialchars($murs[6]['img']); ?>"
-            class="tattoo hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-65% lg:top-53% md:left-2%"
+            class="peinture hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-65% lg:top-53% md:left-2%"
             alt="Mur peint par Omarker"
           />
           <img
             src="<?php echo htmlspecialchars($murs[7]['img']); ?>"
-            class="tattoo hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-14% md:absolute md:top-47% lg:top-48% md:right-2%"
+            class="peinture hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-14% md:absolute md:top-47% lg:top-48% md:right-2%"
             alt="Mur peint par Omarker"
           />
           <img
             src="<?php echo htmlspecialchars($murs[8]['img']); ?>"
-            class="tattoo hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% lg:w-18% md:absolute md:top-70% lg:top-65% md:left-23%"
+            class="peinture hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% lg:w-18% md:absolute md:top-70% lg:top-65% md:left-23%"
             alt="Mur peint par Omarker"
           />
           <img
             src="<?php echo htmlspecialchars($murs[9]['img']); ?>"
-            class="tattoo hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-75% lg:top-75% md:right-34% lg:right-40%"
+            class="peinture hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-75% lg:top-75% md:right-34% lg:right-40%"
             alt="Mur peint par Omarker"
           />
           <img
             src="<?php echo htmlspecialchars($murs[10]['img']); ?>"
-            class="tattoo hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-70% lg:top-70% md:right-9%"
+            class="peinture hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-70% lg:top-70% md:right-9%"
             alt="Mur peint par Omarker"
           />
           <img
             src="<?php echo htmlspecialchars($murs[11]['img']); ?>"
-            class="tattoo hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-95% lg:top-80% md:left-3%"
+            class="peinture hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-95% lg:top-80% md:left-3%"
             alt="Mur peint par Omarker"
           />
           <img
             src="<?php echo htmlspecialchars($murs[12]['img']); ?>"
-            class="tattoo hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-100% lg:top-88% md:left-22% lg:left-19%"
+            class="peinture hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-100% lg:top-88% md:left-22% lg:left-19%"
             alt="Mur peint par Omarker"
           />
           <img
             src="<?php echo htmlspecialchars($murs[13]['img']); ?>"
-            class="tattoo hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-95% lg:top-90% md:right-25%"
+            class="peinture hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-95% lg:top-90% md:right-25%"
             alt="Mur peint par Omarker"
           />
           <img
             src="<?php echo htmlspecialchars($murs[14]['img']); ?>"
-            class="tattoo hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-15% md:absolute md:top-90% lg:top-94% md:right-5%"
+            class="peinture hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-15% md:absolute md:top-90% lg:top-94% md:right-5%"
             alt="Mur peint par Omarker"
           />
         </section>
@@ -386,77 +386,77 @@
           class="scrollSpy relative top-28 flex flex-wrap md:block md:h-1000 lg:h-1900 mb-20 md:mb-96"
         >
           <img
-            src="assets/images/oeuvresOmarker/Focus.jpg"
+            src="assets/images/oeuvresOmarker/Focus.webp"
             class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-6% md:left-16%"
             alt="Oeuvre intitulée Focus"
           />
           <img
-            src="assets/images/oeuvresOmarker/Algorithme.jpg"
+            src="assets/images/oeuvresOmarker/Algorithme.webp"
             class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-8% md:left-40%"
             alt="Oeuvre intitulée Algorithme"
           />
           <img
-            src="assets/images/oeuvresOmarker/Algorithmique.jpg"
+            src="assets/images/oeuvresOmarker/Algorithmique.webp"
             class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:right-14% md:top-0"
             alt="Oeuvre intitulée Algorithmique"
           />
           <img
-            src="assets/images/oeuvresOmarker/Concrete2.jpg"
+            src="assets/images/oeuvresOmarker/Concrete2.webp"
             class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-15% md:absolute md:right-3% md:top-13%"
             alt="Oeuvre intitulée Concrete"
           />
           <img
-            src="assets/images/oeuvresOmarker/FRAGMENT.jpg"
+            src="assets/images/oeuvresOmarker/FRAGMENT.webp"
             class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-25% md:absolute md:top-35% md:left-13% lg:left-10%"
             alt="Oeuvre intitulée Fragment"
           />
           <img
-            src="assets/images/oeuvresOmarker/Start.jpg"
+            src="assets/images/oeuvresOmarker/Start.webp"
             class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-35% md:absolute md:top-33% lg:top-28% md:right-20%"
             alt="Oeuvre intitulée Start"
           />
           <img
-            src="assets/images/oeuvresOmarker/FragmentDeTerrain1.jpg"
+            src="assets/images/oeuvresOmarker/FragmentDeTerrain1.webp"
             class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-65% lg:top-53% md:left-2%"
             alt="Oeuvre intitulée FragmentDeTerrain"
           />
           <img
-            src="assets/images/oeuvresOmarker/HeureBleue.jpg"
+            src="assets/images/oeuvresOmarker/HeureBleue.webp"
             class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-14% md:absolute md:top-47% lg:top-48% md:right-2%"
             alt="Oeuvre intitulée HeureBleue"
           />
           <img
-            src="assets/images/oeuvresOmarker/NuitD_orage.jpg"
+            src="assets/images/oeuvresOmarker/NuitD_orage.webp"
             class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% lg:w-18% md:absolute md:top-70% lg:top-65% md:left-23%"
             alt="Oeuvre intitulée NuitD"
           />
           <img
-            src="assets/images/oeuvresOmarker/Variable1-2.jpg"
+            src="assets/images/oeuvresOmarker/Variable1-2.webp"
             class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-75% lg:top-75% md:right-34% lg:right-40%"
             alt="Oeuvre intitulée Variable"
           />
           <img
-            src="assets/images/oeuvresOmarker/Trajectoire1.jpg"
+            src="assets/images/oeuvresOmarker/Trajectoire1.webp"
             class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-70% lg:top-70% md:right-9%"
             alt="Oeuvre intitulée Trajectoire"
           />
           <img
-            src="assets/images/oeuvresOmarker/Variation.jpg"
+            src="assets/images/oeuvresOmarker/Variation.webp"
             class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-95% lg:top-80% md:left-3%"
             alt="Oeuvre intitulée Variation"
           />
           <img
-            src="assets/images/oeuvresOmarker/VapeurToxique.jpg"
+            src="assets/images/oeuvresOmarker/VapeurToxique.webp"
             class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-100% lg:top-88% md:left-22% lg:left-19%"
             alt="Oeuvre intitulée VapeurToxique"
           />
           <img
-            src="assets/images/oeuvresOmarker/Beton2.jpg"
+            src="assets/images/oeuvresOmarker/Beton2.webp"
             class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-95% lg:top-90% md:right-25%"
             alt="Oeuvre intitulée Beton"
           />
           <img
-            src="assets/images/oeuvresOmarker/MecaniqueOrganique.jpg"
+            src="assets/images/oeuvresOmarker/MecaniqueOrganique.webp"
             class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-15% md:absolute md:top-90% lg:top-94% md:right-5%"
             alt="Oeuvre intitulée MecaniqueOrganique"
           />
