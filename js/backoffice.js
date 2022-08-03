@@ -5,6 +5,7 @@ const menuPeinture = document.querySelector("#menuPeinture");
 const menuTattoo = document.querySelector("#menuTattoo");
 const menuGraphisme = document.querySelector("#menuGraphisme");
 
+/* Les 3 btn pour naviguer dans les trois menus */
 btnPeinture.addEventListener("click", () => {
   menuPeinture.classList.add("flex");
   menuPeinture.classList.remove("hidden");
@@ -32,52 +33,66 @@ btnGraphisme.addEventListener("click", () => {
   menuPeinture.classList.remove("flex");
 });
 
+/* Les sous btn pour afficher les vue */
 const contentDiv = document.querySelector("#content");
+const btnOeuvre = document.querySelector("#btnOeuvre");
+const btnWorkshop = document.querySelector("#btnWorkshop");
+const btnTatouage = document.querySelector("#btnTatouage");
+const btnExpo = document.querySelector("#btnExpo");
+const btnFlash = document.querySelector("#btnFlash");
+const btnDirArt = document.querySelector("#btnDirArt");
+const btnIdVisu = document.querySelector("#btnIdVisu");
+const btnPrint = document.querySelector("#btnPrint");
 const btnMur = document.querySelector("#btnMur");
+
+
 btnMur.addEventListener("click", () => {
   callGalerie("mur");
 });
 
-const btnOeuvre = document.querySelector("#btnOeuvre");
 btnOeuvre.addEventListener("click", () => {
   callController("oeuvre");
 });
 
-const btnExpo = document.querySelector("#btnExpo");
 btnExpo.addEventListener("click", () => {
   callController("expo");
+  
+  var yourCodeToBeCalled = function(){
+    const btnAddExpo = document.querySelector('#btnAddExpo');
+    btnAddExpo.addEventListener("click", () => {
+      console.log("test");
+    });
+  }
+   loadJS("./js/test.js", yourCodeToBeCalled, document.body);
+
 });
 
-const btnWorkshop = document.querySelector("#btnWorkshop");
 btnWorkshop.addEventListener("click", () => {
   callGalerie("workshop");
 });
 
-const btnTatouage = document.querySelector("#btnTatouage");
 btnTatouage.addEventListener("click", () => {
   callGalerie("tattoo");
 });
 
-const btnFlash = document.querySelector("#btnFlash");
 btnFlash.addEventListener("click", () => {
   callController("flash");
 });
 
-const btnDirArt = document.querySelector("#btnDirArt");
 btnDirArt.addEventListener("click", () => {
   callGalerie("dirart");
 });
 
-const btnIdVisu = document.querySelector("#btnIdVisu");
 btnIdVisu.addEventListener("click", () => {
   callGalerie("idvisu");
 });
 
-const btnPrint = document.querySelector("#btnPrint");
 btnPrint.addEventListener("click", () => {
   callGalerie("print");
 });
 
+
+/* Fonction pour affichier les vue */
 function callController(nom) {
   let url = `./controllers/backoffice_${nom}.php`;
   fetch(url, {
@@ -91,6 +106,7 @@ function callController(nom) {
     });
 }
 
+/* Fonction pour affichier la galerie souhaitée */
 function callGalerie(nom) {
   let formData = new FormData();
   formData.append("nom", nom);
@@ -106,3 +122,17 @@ function callGalerie(nom) {
       contentDiv.innerHTML = data;
     });
 }
+
+var loadJS = function(url, implementationCode, location){
+  //url is URL of external file, implementationCode is the code
+  //to be called from the file, location is the location to 
+  //insert the <script> element
+
+  var scriptTag = document.createElement('script');
+  scriptTag.src = url;
+
+  scriptTag.onload = implementationCode;
+  scriptTag.onreadystatechange = implementationCode;
+
+  location.appendChild(scriptTag);
+};

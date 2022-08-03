@@ -938,16 +938,16 @@ video {
   width: 5rem;
 }
 
-.w-15\% {
-  width: 15%;
-}
-
 .w-10\% {
   width: 10%;
 }
 
 .w-10 {
   width: 2.5rem;
+}
+
+.w-15\% {
+  width: 15%;
 }
 
 .-translate-x-1\/2 {

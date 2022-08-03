@@ -1,10 +1,11 @@
+<main>
 <div class="flex flex-col">
     <section class="flex flex-col">
         <h2 class="my-5 ml-5 text-5xl font-bebas font-bold">Expo Passé</h2>
         <div class="flex flex-wrap">
-            <div class="w-15% mx-10 my-5 hover:text-slate-500 hover:border-slate-500 font-bebas text-2xl flex justify-center items-center border rounded-md border-black cursor-pointer">
-                <p>Ajouter</p>
-            </div>
+            <button class="w-15% mx-10 my-5 hover:text-slate-500 hover:border-slate-500 font-bebas text-2xl flex justify-center items-center border rounded-md border-black cursor-pointer" id="btnAddExpo">
+                Ajouter
+            </button>
         <!-- Contenu a afficher -->
         <?php foreach ($exposPasse as $expoPasse) { ?>
             <div class="w-15% mx-10 my-5 hover:text-slate-500 font-bebas text-xl cursor-pointer">
@@ -50,3 +51,5 @@
         </div>
     </section>
 </div>
+</main>
+<script src="./js/backoffice.js"></script>
