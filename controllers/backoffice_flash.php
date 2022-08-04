@@ -1,5 +1,5 @@
 <?php
 
-require_once "../models/db_login.php";
-require_once "../models/flash.php";
-require_once "../views/backoffice/flash.php";
+require_once "./models/db_login.php";
+require_once "./models/flash.php";
+require_once "./views/backoffice/flash.php";
