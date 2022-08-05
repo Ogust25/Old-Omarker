@@ -65,20 +65,32 @@
         </ul>
       </nav>
     </header>
-<main>
-    <div class="flex flex-wrap justify-evenly">
+    <main>
+      <div class="flex flex-wrap justify-evenly" id="main">
         <!-- Contenu a afficher -->
-            <button class="w-10% mx-10 my-5 hover:text-slate-500 hover:border-slate-500 font-bebas text-2xl flex justify-center items-center border rounded-md border-black cursor-pointer" id="test">
-                Ajouter
-            </button>
+        <button class="w-10% mx-10 my-5 hover:text-slate-500 hover:border-slate-500 font-bebas text-2xl flex justify-center items-center border rounded-md border-black cursor-pointer" id="btnAddFlash">
+          Ajouter
+        </button>
         <?php foreach ($flashs as $flash) { ?>
-            <div class="w-10% mx-10 my-5">
-                <img class="hover:invert" src="<?php echo htmlspecialchars($flash['img']); ?>" alt="osef" />
-                <p class="font-bebas text-2xl text-center"><?php echo htmlspecialchars($flash['prix']); ?>€</p>
-            </div>
+          <div class="w-10% mx-10 my-5">
+            <img class="hover:invert" src="<?php echo htmlspecialchars($flash['img']); ?>" alt="osef" />
+            <p class="font-bebas text-2xl text-center"><?php echo htmlspecialchars($flash['prix']); ?>€</p>
+          </div>
         <?php } ?>
-    </div>
-</main>
-<script src="./js/backoffice.js"></script>
-</body>
+      </div>
+      <!-- Modal pour ajouter des flashs -->
+      <div class="justify-center items-center mt-20 w-screen hidden" id="modal">
+        <form method="POST" class="flex flex-col font-bebas text-xl border p-10 w-1/3" id="formAdd">
+          <img class="mx-auto w-4/6" src="./assets/images/empty.webp" alt="preview du fichier choisis" id="preview">
+          <input class="my-5" type="file" name="expoImg" id="expoImg">
+          <label for="expoPrix">PRIX</label>
+          <input class="border-b border-b-black" type="text" id="expoPrix" name="expoPrix">
+          <input class="mt-10 text-2xl font-bold hover:text-green-500 cursor-pointer" type="submit" value="Valider">
+          <button class="mt-5 text-2xl font-bold hover:text-red-500 cursor-pointer" id="btnAnnuler">Annuler</button>
+        </form>
+      </div>
+    </main>
+    <script src="./js/backoffice.js"></script>
+    <script src="./js/addFlash.js"></script>
+  </body>
 </html>

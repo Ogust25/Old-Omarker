@@ -23,7 +23,6 @@ btnAnnuler.addEventListener("click", () => {
 });
 
 form.addEventListener('submit', (e) => {
-  console.log(type);
   e.preventDefault();
   
   let formData = new FormData(form);
