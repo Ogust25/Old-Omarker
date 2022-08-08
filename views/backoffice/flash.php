@@ -72,21 +72,33 @@
           Ajouter
         </button>
         <?php foreach ($flashs as $flash) { ?>
-          <div class="w-10% mx-10 my-5">
+          <div class="w-10% mx-10 my-5 cursor-pointer boxFlash" data-id="<?php echo htmlspecialchars($flash['id_tattoo']); ?>">
             <img class="hover:invert" src="<?php echo htmlspecialchars($flash['img']); ?>" alt="osef" />
             <p class="font-bebas text-2xl text-center"><?php echo htmlspecialchars($flash['prix']); ?>€</p>
           </div>
         <?php } ?>
       </div>
       <!-- Modal pour ajouter des flashs -->
-      <div class="justify-center items-center mt-20 w-screen hidden" id="modal">
-        <form method="POST" class="flex flex-col font-bebas text-xl border p-10 w-1/3" id="formAdd">
+      <div class="justify-center items-center mt-20 hidden" id="modal">
+        <form method="POST" enctype='multipart/form-data' class="flex flex-col font-bebas text-xl border p-10 w-1/3" id="formAdd">
           <img class="mx-auto w-4/6" src="./assets/images/empty.webp" alt="preview du fichier choisis" id="preview">
           <input class="my-5" type="file" name="expoImg" id="expoImg">
           <label for="expoPrix">PRIX</label>
           <input class="border-b border-b-black" type="text" id="expoPrix" name="expoPrix">
           <input class="mt-10 text-2xl font-bold hover:text-green-500 cursor-pointer" type="submit" value="Valider">
-          <button class="mt-5 text-2xl font-bold hover:text-red-500 cursor-pointer" id="btnAnnuler">Annuler</button>
+          <button class="mt-5 text-2xl font-bold hover:text-red-500 cursor-pointer" type="button" id="btnAnnuler">Annuler</button>
+        </form>
+      </div>
+      <!-- Modal pour modif/suppr des flashs -->
+      <div class="justify-center items-center mt-20 hidden" id="modalModif">
+        <form method="POST" enctype='multipart/form-data' class="flex flex-col font-bebas text-xl border p-10 w-1/3" id="formModif">
+          <img class="mx-auto w-4/6" src="./assets/images/empty.webp" alt="preview du fichier choisis" id="previewM">
+          <input class="my-5" type="file" name="expoMImg" id="expoMImg">
+          <label for="expoMPrix">PRIX</label>
+          <input class="border-b border-b-black" type="text" id="expoMPrix" name="expoMPrix">
+          <input class="mt-10 text-2xl font-bold hover:text-green-500 cursor-pointer" type="submit" value="Valider">
+          <button class="mt-5 text-2xl font-bold hover:text-red-500 cursor-pointer" type="button" id="btnMAnnuler">Annuler</button>
+          <button class="mt-5 text-2xl font-bold hover:text-red-500 cursor-pointer" type="button" id="btnSuppr">Supprimer</button>
         </form>
       </div>
     </main>

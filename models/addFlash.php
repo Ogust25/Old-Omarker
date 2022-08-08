@@ -44,7 +44,6 @@ if(isset($_POST['expoPrix']) && !empty($_POST['expoPrix'])
         if (move_uploaded_file($_FILES["expoImg"]["tmp_name"], $target_file)) {
             $linkImg = 'https://augustg.promo-106.codeur.online/omarker/assets/images/flashs/'.$_FILES["expoImg"]["name"];
 
-            // Test if prix already exist
             $sql = "SELECT img FROM `image` WHERE img = '".$linkImg."' LIMIT 1";
             $queryImg = $db->prepare($sql);
             $queryImg->execute();
