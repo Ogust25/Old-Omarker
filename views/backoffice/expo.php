@@ -75,7 +75,7 @@
             </button>
             <!-- Contenu a afficher -->
             <?php foreach ($exposPasse as $expoPasse) { ?>
-              <div class="w-15% mx-10 my-5 hover:text-slate-500 font-bebas text-xl cursor-pointer">
+              <div class="w-15% mx-10 my-5 hover:text-slate-500 font-bebas text-xl cursor-pointer boxExpo" data-type="1" data-idExpo="<?php echo htmlspecialchars($expoPasse['id_expo']); ?>">
                 <p><?php echo htmlspecialchars($expoPasse['year']); ?></p>
                 <p><?php echo htmlspecialchars($expoPasse['nom']); ?></p>
                 <p><?php echo htmlspecialchars($expoPasse['lieu']); ?></p>
@@ -92,7 +92,7 @@
             </button>
             <!-- Contenu a afficher -->
             <?php foreach ($exposResidence as $expoResidence) { ?>
-              <div class="w-15% mx-10 my-5 hover:text-slate-500 font-bebas text-xl cursor-pointer">
+              <div class="w-15% mx-10 my-5 hover:text-slate-500 font-bebas text-xl cursor-pointer boxExpo" data-type="2" data-idExpo="<?php echo htmlspecialchars($expoResidence['id_expo']); ?>">
                 <p><?php echo htmlspecialchars($expoResidence['year']); ?></p>
                 <p><?php echo htmlspecialchars($expoResidence['nom']); ?></p>
                 <p><?php echo htmlspecialchars($expoResidence['lieu']); ?></p>
@@ -109,7 +109,7 @@
             </button>
             <!-- Contenu a afficher -->
             <?php foreach ($exposFutur as $expoFutur) { ?>
-            <div class="w-15% mx-10 my-5 hover:text-slate-500 font-bebas text-xl cursor-pointer">
+            <div class="w-15% mx-10 my-5 hover:text-slate-500 font-bebas text-xl cursor-pointer boxExpo" data-type="3" data-idExpo="<?php echo htmlspecialchars($expoFutur['id_expo']); ?>">
               <p><?php echo htmlspecialchars($expoFutur['year']); ?></p>
               <p><?php echo htmlspecialchars($expoFutur['nom']); ?></p>
               <p><?php echo htmlspecialchars($expoFutur['lieu']); ?></p>
@@ -128,7 +128,21 @@
           <label class="mt-5" for="expoLieu">LIEU</label>
           <input class="border-b border-b-black " type="text" id="expoLieu" name="expoLieu">
           <input class="mt-10 text-2xl font-bold hover:text-green-500 cursor-pointer" type="submit" value="Valider">
-          <button class="mt-5 text-2xl font-bold hover:text-red-500 cursor-pointer" id="btnAnnuler">Annuler</button>
+          <button class="mt-5 text-2xl font-bold hover:text-red-500 cursor-pointer" type="button" id="btnAnnuler">Annuler</button>
+        </form>
+      </div>
+      <!-- Modal pour modifier/supprimer des expos -->
+      <div class="justify-center items-center mt-20 w-screen hidden" id="modalSuppr">
+        <form method="POST" class="flex flex-col font-bebas text-xl border p-10 w-1/3" id="formModif">
+          <label for="expoNom">NOM</label>
+          <input class="border-b border-b-black " type="text" id="expoMNom" name="expoMNom">
+          <label class="mt-5" for="expoDate">DATE</label>
+          <input class="border-b border-b-black " type="text" id="expoMDate" name="expoMDate">
+          <label class="mt-5" for="expoLieu">LIEU</label>
+          <input class="border-b border-b-black " type="text" id="expoMLieu" name="expoMLieu">
+          <input class="mt-10 text-2xl font-bold hover:text-green-500 cursor-pointer" type="submit" value="Valider">
+          <button class="mt-5 text-2xl font-bold hover:text-red-500 cursor-pointer" type="button" id="btnMAnnuler">Annuler</button>
+          <button class="mt-5 text-2xl font-bold hover:text-red-500 cursor-pointer" type="button" id="btnSuppr">Supprimer</button>
         </form>
       </div>
     </main>
