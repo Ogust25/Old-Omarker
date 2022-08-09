@@ -1,6 +1,6 @@
 <?php
 
-$stmt = $db->prepare('SELECT nom, `year`.`year`, technique.technique, taille.taille, `image`.img FROM peinture
+$stmt = $db->prepare('SELECT nom, `year`.`year`, technique.technique, taille.taille, `image`.img, `id_peinture` FROM peinture
                         INNER JOIN `year` ON `year`.id_year = peinture.id_year
                         INNER JOIN technique ON technique.id_technique = peinture.id_technique
                         INNER JOIN taille ON taille.id_taille = peinture.id_taille

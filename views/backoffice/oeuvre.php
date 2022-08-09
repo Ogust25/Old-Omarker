@@ -66,15 +66,33 @@
       </nav>
     </header>
 <main>
-    <div class="flex flex-wrap justify-evenly">
+    <div class="flex flex-wrap justify-evenly" id="main">
         <!-- Contenu a afficher -->
         <?php foreach ($oeuvres as $oeuvre) { ?>
-            <div class="w-20% mx-10 my-5 hover:invert">
+            <div class="w-20% mx-10 my-5 hover:invert cursor-pointer boxOeuvre" data-id='<?php echo htmlspecialchars($oeuvre['id_peinture']); ?>'>
                 <img src="<?php echo htmlspecialchars($oeuvre['img']); ?>" alt="osef" />
             </div>
         <?php } ?>
     </div>
+    <!-- Modal pour modifier des oeuvres -->
+    <div class="justify-center items-center mt-20 hidden" id="modal">
+      <form method="POST" enctype='multipart/form-data' class="flex flex-col font-bebas text-xl border p-10 w-1/3" id="form">
+        <img class="mx-auto w-4/6" src="./assets/images/empty.webp" alt="preview du fichier choisis" id="preview">
+        <input class="my-5" type="file" name="expoImg" id="expoImg">
+        <label for="expoNom">Nom</label>
+        <input class="border-b border-b-black mb-5" type="text" id="expoNom" name="expoNom">
+        <label for="expoTaille">Taille</label>
+        <input class="border-b border-b-black mb-5" type="text" id="expoTaille" name="expoTaille">
+        <label for="expoTech">Tech</label>
+        <input class="border-b border-b-black mb-5" type="text" id="expoTech" name="expoTech">
+        <label for="expoDate">Date</label>
+        <input class="border-b border-b-black" type="text" id="expoDate" name="expoDate">
+        <input class="mt-10 text-2xl font-bold hover:text-green-500 cursor-pointer" type="submit" value="Valider">
+        <button class="mt-5 text-2xl font-bold hover:text-red-500 cursor-pointer" type="button" id="btnAnnuler">Annuler</button>
+      </form>
+    </div>
 </main>
 <script src="./js/backoffice.js"></script>
+<script src="./js/modifOeuvre.js"></script>
 </body>
 </html>
