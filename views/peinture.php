@@ -108,26 +108,26 @@
         <!-- Galerie Mur -->
         <section
           id="mur"
-          class="scrollSpy relative top-20 md:top-28 flex flex-wrap md:block md:h-1900 mb-20 md:mb-96"
+          class="scrollSpy relative top-20 md:top-28 flex flex-wrap md:block md:h-1000 lg:h-1900 mb-20 md:mb-96"
         >
           <img
             src="<?php echo htmlspecialchars($murs[0]['img']); ?>"
-            class="peinture hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-6% md:left-16%"
+            class="peinture hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-25% lg:w-20% md:absolute md:top-6% md:left-16%"
             alt="Mur peint par Omarker"
           />
           <img
             src="<?php echo htmlspecialchars($murs[1]['img']); ?>"
-            class="peinture hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-8% md:left-40%"
+            class="peinture hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-25% lg:w-20% md:absolute md:top-8% md:left-40%"
             alt="Mur peint par Omarker"
           />
           <img
             src="<?php echo htmlspecialchars($murs[2]['img']); ?>"
-            class="peinture hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:right-14% md:top-0"
+            class="peinture hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-25% lg:w-20% md:absolute md:right-14% md:top-0"
             alt="Mur peint par Omarker"
           />
           <img
             src="<?php echo htmlspecialchars($murs[3]['img']); ?>"
-            class="peinture hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-15% md:absolute md:right-3% md:top-13%"
+            class="peinture hover:invert hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-25% lg:w-20% md:absolute md:right-3% md:top-13%"
             alt="Mur peint par Omarker"
           />
           <img
