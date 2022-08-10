@@ -859,6 +859,10 @@ video {
   display: flex;
 }
 
+.table {
+  display: table;
+}
+
 .hidden {
   display: none;
 }
@@ -2009,16 +2013,12 @@ video {
     top: 1.25rem;
   }
 
-  .lg\:right-5\% {
-    right: 5%;
+  .lg\:left-70\% {
+    left: 70%;
   }
 
   .lg\:top-0 {
     top: 0px;
-  }
-
-  .lg\:right-5 {
-    right: 1.25rem;
   }
 
   .lg\:top-30\% {
@@ -2031,30 +2031,6 @@ video {
 
   .lg\:top-40 {
     top: 10rem;
-  }
-
-  .lg\:right-6\% {
-    right: 6%;
-  }
-
-  .lg\:right-6 {
-    right: 1.5rem;
-  }
-
-  .lg\:right-10\% {
-    right: 10%;
-  }
-
-  .lg\:right-10 {
-    right: 2.5rem;
-  }
-
-  .lg\:left-90\% {
-    left: 90%;
-  }
-
-  .lg\:left-70\% {
-    left: 70%;
   }
 
   .lg\:mx-5 {
