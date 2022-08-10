@@ -388,7 +388,7 @@
           <video class="cursor-pointer w-full md:w-70% lg:w-1/2 md:absolute md:top-0 lg:top-5% md:right-5% lg:left-15%" id="videoWorkshop" src="<?php echo htmlspecialchars($workshops[5]['img']); ?>" loop muted autoplay></video>
           <img
             src="<?php echo htmlspecialchars($workshops[0]['img']); ?>"
-            class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/2 md:w-35% lg:w-25% md:absolute md:left-10% lg:right-5% md:top-42% lg:top-0"
+            class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/2 md:w-35% lg:w-25% md:absolute md:left-10% lg:left-70% md:top-42% lg:top-0"
             alt="Workshop de Omarker"
           />
           <img
