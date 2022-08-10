@@ -98,3 +98,9 @@ const spyScrolling = () => {
 }
 
 spyScrolling();
+
+// Toogle mute for vidéo
+const videoWorkshop = document.querySelector('#videoWorkshop');
+videoWorkshop.addEventListener('click', () => {
+  videoWorkshop.muted = !videoWorkshop.muted;
+})

@@ -383,82 +383,33 @@
         <!-- Galerie Workshop -->
         <section
           id="workshop"
-          class="scrollSpy relative top-28 flex flex-wrap md:block md:h-1000 lg:h-1900 mb-20 md:mb-96"
+          class="scrollSpy relative top-28 flex flex-wrap md:block md:h-800 lg:h-1000 mb-20"
         >
+          <video class="cursor-pointer w-full md:w-70% lg:w-1/2 md:absolute md:top-0 lg:top-5% md:right-5% lg:left-15%" id="videoWorkshop" src="<?php echo htmlspecialchars($workshops[5]['img']); ?>" loop muted autoplay></video>
           <img
-            src="assets/images/oeuvresOmarker/Focus.webp"
-            class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-6% md:left-16%"
-            alt="Oeuvre intitulée Focus"
+            src="<?php echo htmlspecialchars($workshops[0]['img']); ?>"
+            class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/2 md:w-35% lg:w-25% md:absolute md:left-10% lg:right-5% md:top-42% lg:top-0"
+            alt="Workshop de Omarker"
           />
           <img
-            src="assets/images/oeuvresOmarker/Algorithme.webp"
-            class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-8% md:left-40%"
-            alt="Oeuvre intitulée Algorithme"
+            src="<?php echo htmlspecialchars($workshops[1]['img']); ?>"
+            class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/2 md:w-36% lg:w-20% md:absolute md:right-3% md:top-45% lg:top-30%"
+            alt="Workshop de Omarker"
           />
           <img
-            src="assets/images/oeuvresOmarker/Algorithmique.webp"
-            class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:right-14% md:top-0"
-            alt="Oeuvre intitulée Algorithmique"
+            src="<?php echo htmlspecialchars($workshops[2]['img']); ?>"
+            class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/2 md:w-25% md:absolute md:bottom-10% md:left-13% lg:left-10%"
+            alt="Workshop de Omarker"
           />
           <img
-            src="assets/images/oeuvresOmarker/Concrete2.webp"
-            class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-15% md:absolute md:right-3% md:top-13%"
-            alt="Oeuvre intitulée Concrete"
+            src="<?php echo htmlspecialchars($workshops[3]['img']); ?>"
+            class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/2 md:w-30% md:absolute md:bottom-13% md:left-40% md:z-10"
+            alt="Workshop de Omarker"
           />
           <img
-            src="assets/images/oeuvresOmarker/FRAGMENT.webp"
-            class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-25% md:absolute md:top-35% md:left-13% lg:left-10%"
-            alt="Oeuvre intitulée Fragment"
-          />
-          <img
-            src="assets/images/oeuvresOmarker/Start.webp"
-            class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-35% md:absolute md:top-33% lg:top-28% md:right-20%"
-            alt="Oeuvre intitulée Start"
-          />
-          <img
-            src="assets/images/oeuvresOmarker/FragmentDeTerrain1.webp"
-            class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-65% lg:top-53% md:left-2%"
-            alt="Oeuvre intitulée FragmentDeTerrain"
-          />
-          <img
-            src="assets/images/oeuvresOmarker/HeureBleue.webp"
-            class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-14% md:absolute md:top-47% lg:top-48% md:right-2%"
-            alt="Oeuvre intitulée HeureBleue"
-          />
-          <img
-            src="assets/images/oeuvresOmarker/NuitD_orage.webp"
-            class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% lg:w-18% md:absolute md:top-70% lg:top-65% md:left-23%"
-            alt="Oeuvre intitulée NuitD"
-          />
-          <img
-            src="assets/images/oeuvresOmarker/Variable1-2.webp"
-            class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-75% lg:top-75% md:right-34% lg:right-40%"
-            alt="Oeuvre intitulée Variable"
-          />
-          <img
-            src="assets/images/oeuvresOmarker/Trajectoire1.webp"
-            class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-70% lg:top-70% md:right-9%"
-            alt="Oeuvre intitulée Trajectoire"
-          />
-          <img
-            src="assets/images/oeuvresOmarker/Variation.webp"
-            class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-95% lg:top-80% md:left-3%"
-            alt="Oeuvre intitulée Variation"
-          />
-          <img
-            src="assets/images/oeuvresOmarker/VapeurToxique.webp"
-            class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-100% lg:top-88% md:left-22% lg:left-19%"
-            alt="Oeuvre intitulée VapeurToxique"
-          />
-          <img
-            src="assets/images/oeuvresOmarker/Beton2.webp"
-            class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-95% lg:top-90% md:right-25%"
-            alt="Oeuvre intitulée Beton"
-          />
-          <img
-            src="assets/images/oeuvresOmarker/MecaniqueOrganique.webp"
-            class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-15% md:absolute md:top-90% lg:top-94% md:right-5%"
-            alt="Oeuvre intitulée MecaniqueOrganique"
+            src="<?php echo htmlspecialchars($workshops[4]['img']); ?>"
+            class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-full md:w-25% md:absolute md:bottom-5% md:right-6%"
+            alt="Workshop de Omarker"
           />
         </section>
       </main>
