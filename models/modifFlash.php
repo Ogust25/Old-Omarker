@@ -33,7 +33,7 @@ if(isset($_POST['expoMPrix']) && !empty($_POST['expoMPrix'])){
     }
 
     // Test if img change
-    if(isset($_FILES['expoMImg']) && !empty($_FILES['expoMImg'])){
+    if($_FILES['expoMImg']['name'] != ''){
         // Add img
         $target_dir = "../assets/images/flashs/";
         $target_file = $target_dir . basename($_FILES["expoMImg"]["name"]);
@@ -94,7 +94,7 @@ if(isset($_POST['expoMPrix']) && !empty($_POST['expoMPrix'])){
 
     }
 
-    if(isset($_FILES['expoMImg']) && !empty($_FILES['expoMImg'])){
+    if($_FILES['expoMImg']['name'] != ''){
         // Data insertion into the database
         $sql = 'UPDATE tattoo SET `id_image`=:idImg, `id_prix`=:idPrix WHERE `id_tattoo`=:idTattoo;';
         $query = $db->prepare($sql);
