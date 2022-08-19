@@ -95,139 +95,79 @@
           class="scrollSpy relative top-28 flex flex-wrap md:block md:h-1000 lg:h-1900 mb-20 md:mb-96"
         >
           <img
-            src="assets/images/oeuvresOmarker/Focus.webp"
+            src="<?php echo htmlspecialchars($dirArts[0]['img']); ?>"
             class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-6% md:left-16%"
-            alt="Oeuvre intitulée Focus"
-            data-nom="Focus"
-            data-taille="30x40cm"
-            data-tech="Technique mixte sur bois"
-            data-date="2022"
+            alt="graphisme de Omarker"
           />
           <img
-            src="assets/images/oeuvresOmarker/Algorithme.webp"
+            src="<?php echo htmlspecialchars($dirArts[1]['img']); ?>"
             class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-8% md:left-40%"
-            alt="Oeuvre intitulée Algorithme"
-            data-nom="Algorithme"
-            data-taille="60x80cm"
-            data-tech="Technique mixte sur toile"
-            data-date="2021"
+            alt="graphisme de Omarker"
           />
           <img
-            src="assets/images/oeuvresOmarker/Algorithmique.webp"
+            src="<?php echo htmlspecialchars($dirArts[2]['img']); ?>"
             class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:right-14% md:top-0"
-            alt="Oeuvre intitulée Algorithmique"
-            data-nom="Algorithmique"
-            data-taille="50x60cm"
-            data-tech="Technique mixte sur toile"
-            data-date="2021"
+            alt="graphisme de Omarker"
           />
           <img
-            src="assets/images/oeuvresOmarker/Concrete2.webp"
+            src="<?php echo htmlspecialchars($dirArts[3]['img']); ?>"
             class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-15% md:absolute md:right-3% md:top-13%"
-            alt="Oeuvre intitulée Concrete"
-            data-nom="Concrete 2"
-            data-taille="60x80cm"
-            data-tech="Technique mixte sur toile"
-            data-date="2021"
+            alt="graphisme de Omarker"
           />
           <img
-            src="assets/images/oeuvresOmarker/FRAGMENT.webp"
+            src="<?php echo htmlspecialchars($dirArts[4]['img']); ?>"
             class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-25% md:absolute md:top-35% md:left-13% lg:left-10%"
-            alt="Oeuvre intitulée Fragment"
-            data-nom="Fragment"
-            data-taille="60x80cm"
-            data-tech="Technique mixte sur toile"
-            data-date="2021"
+            alt="graphisme de Omarker"
           />
           <img
-            src="assets/images/oeuvresOmarker/Start.webp"
+            src="<?php echo htmlspecialchars($dirArts[5]['img']); ?>"
             class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-35% md:absolute md:top-33% lg:top-28% md:right-20%"
-            alt="Oeuvre intitulée Start"
-            data-nom="Start"
-            data-taille="60x80cm"
-            data-tech="Technique mixte sur toile"
-            data-date="2021"
+            alt="graphisme de Omarker"
           />
           <img
-            src="assets/images/oeuvresOmarker/FragmentDeTerrain1.webp"
+            src="<?php echo htmlspecialchars($dirArts[6]['img']); ?>"
             class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-65% lg:top-53% md:left-2%"
-            alt="Oeuvre intitulée Fragment De Terrain"
-            data-nom="Fragment De Terrain"
-            data-taille="60x80cm"
-            data-tech="Technique mixte sur toile"
-            data-date="2021"
+            alt="graphisme de Omarker"
           />
           <img
-            src="assets/images/oeuvresOmarker/HeureBleue.webp"
+            src="<?php echo htmlspecialchars($dirArts[7]['img']); ?>"
             class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-14% md:absolute md:top-47% lg:top-48% md:right-2%"
-            alt="Oeuvre intitulée Heure Bleue"
-            data-nom="Heure Bleue"
-            data-taille="60x80cm"
-            data-tech="Technique mixte sur bois"
-            data-date="2022"
+            alt="graphisme de Omarker"
           />
           <img
-            src="assets/images/oeuvresOmarker/NuitD_orage.webp"
+            src="<?php echo htmlspecialchars($dirArts[8]['img']); ?>"
             class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% lg:w-18% md:absolute md:top-70% lg:top-65% md:left-23%"
-            alt="Oeuvre intitulée Nuit d'orage"
-            data-nom="Nuit d'orage"
-            data-taille="60x80cm"
-            data-tech="Technique mixte sur bois"
-            data-date="2022"
+            alt="graphisme de Omarker"
           />
           <img
-            src="assets/images/oeuvresOmarker/Variable1-2.webp"
+            src="<?php echo htmlspecialchars($dirArts[9]['img']); ?>"
             class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-75% lg:top-75% md:right-34% lg:right-40%"
-            alt="Oeuvre intitulée Variable"
-            data-nom="Variable"
-            data-taille="60x80cm"
-            data-tech="Technique mixte sur bois"
-            data-date="2022"
+            alt="graphisme de Omarker"
           />
           <img
-            src="assets/images/oeuvresOmarker/Trajectoire1.webp"
+            src="<?php echo htmlspecialchars($dirArts[10]['img']); ?>"
             class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-70% lg:top-70% md:right-9%"
-            alt="Oeuvre intitulée Trajectoire"
-            data-nom="Trajectoire"
-            data-taille="60x80cm"
-            data-tech="Technique mixte sur toile"
-            data-date="2021"
+            alt="graphisme de Omarker"
           />
           <img
-            src="assets/images/oeuvresOmarker/Variation.webp"
+            src="<?php echo htmlspecialchars($dirArts[11]['img']); ?>"
             class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-95% lg:top-80% md:left-3%"
-            alt="Oeuvre intitulée Variation"
-            data-nom="Variation"
-            data-taille="60x80cm"
-            data-tech="Technique mixte sur bois"
-            data-date="2022"
+            alt="graphisme de Omarker"
           />
           <img
-            src="assets/images/oeuvresOmarker/VapeurToxique.webp"
+            src="<?php echo htmlspecialchars($dirArts[12]['img']); ?>"
             class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-100% lg:top-88% md:left-22% lg:left-19%"
-            alt="Oeuvre intitulée Vapeur Toxique"
-            data-nom="Vapeur Toxique"
-            data-taille="21x29.7cm"
-            data-tech="Technique mixte sur papier"
-            data-date="2022"
+            alt="graphisme de Omarker"
           />
           <img
-            src="assets/images/oeuvresOmarker/Beton2.webp"
+            src="<?php echo htmlspecialchars($dirArts[13]['img']); ?>"
             class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-95% lg:top-90% md:right-25%"
-            alt="Oeuvre intitulée Beton"
-            data-nom="Beton"
-            data-taille="30x40"
-            data-tech="Technique mixte sur beton"
-            data-date="2021"
+            alt="graphisme de Omarker"
           />
           <img
-            src="assets/images/oeuvresOmarker/MecaniqueOrganique.webp"
+            src="<?php echo htmlspecialchars($dirArts[14]['img']); ?>"
             class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-15% md:absolute md:top-90% lg:top-94% md:right-5%"
-            alt="Oeuvre intitulée Mecanique Organique"
-            data-nom="Mecanique Organique"
-            data-taille="29,7x42cm"
-            data-tech="Technique mixte sur papier"
-            data-date="2020"
+            alt="graphisme de Omarker"
           />
         </section>
         <!-- Galerie identité visuelle -->
@@ -236,221 +176,136 @@
           class="scrollSpy relative top-28 flex flex-wrap md:block md:h-1000 lg:h-1900 mb-20 md:mb-96"
         >
           <img
-            src="assets/images/oeuvresOmarker/Focus.webp"
+            src="<?php echo htmlspecialchars($idVisus[0]['img']); ?>"
             class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-6% md:left-16%"
-            alt="Oeuvre intitulée Focus"
-            data-nom="Focus"
-            data-taille="30x40cm"
-            data-tech="Technique mixte sur bois"
-            data-date="2022"
+            alt="graphisme de Omarker"
           />
           <img
-            src="assets/images/oeuvresOmarker/Algorithme.webp"
+            src="<?php echo htmlspecialchars($idVisus[1]['img']); ?>"
             class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-8% md:left-40%"
-            alt="Oeuvre intitulée Algorithme"
-            data-nom="Algorithme"
-            data-taille="60x80cm"
-            data-tech="Technique mixte sur toile"
-            data-date="2021"
+            alt="graphisme de Omarker"
           />
           <img
-            src="assets/images/oeuvresOmarker/Algorithmique.webp"
+            src="<?php echo htmlspecialchars($idVisus[2]['img']); ?>"
             class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:right-14% md:top-0"
-            alt="Oeuvre intitulée Algorithmique"
-            data-nom="Algorithmique"
-            data-taille="50x60cm"
-            data-tech="Technique mixte sur toile"
-            data-date="2021"
+            alt="graphisme de Omarker"
           />
           <img
-            src="assets/images/oeuvresOmarker/Concrete2.webp"
+            src="<?php echo htmlspecialchars($idVisus[3]['img']); ?>"
             class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-15% md:absolute md:right-3% md:top-13%"
-            alt="Oeuvre intitulée Concrete"
-            data-nom="Concrete 2"
-            data-taille="60x80cm"
-            data-tech="Technique mixte sur toile"
-            data-date="2021"
+            alt="graphisme de Omarker"
           />
           <img
-            src="assets/images/oeuvresOmarker/FRAGMENT.webp"
+            src="<?php echo htmlspecialchars($idVisus[4]['img']); ?>"
             class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-25% md:absolute md:top-35% md:left-13% lg:left-10%"
-            alt="Oeuvre intitulée Fragment"
-            data-nom="Fragment"
-            data-taille="60x80cm"
-            data-tech="Technique mixte sur toile"
-            data-date="2021"
+            alt="graphisme de Omarker"
           />
           <img
-            src="assets/images/oeuvresOmarker/Start.webp"
+            src="<?php echo htmlspecialchars($idVisus[5]['img']); ?>"
             class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-35% md:absolute md:top-33% lg:top-28% md:right-20%"
-            alt="Oeuvre intitulée Start"
-            data-nom="Start"
-            data-taille="60x80cm"
-            data-tech="Technique mixte sur toile"
-            data-date="2021"
+            alt="graphisme de Omarker"
           />
           <img
-            src="assets/images/oeuvresOmarker/FragmentDeTerrain1.webp"
+            src="<?php echo htmlspecialchars($idVisus[6]['img']); ?>"
             class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-65% lg:top-53% md:left-2%"
-            alt="Oeuvre intitulée Fragment De Terrain"
-            data-nom="Fragment De Terrain"
-            data-taille="60x80cm"
-            data-tech="Technique mixte sur toile"
-            data-date="2021"
+            alt="graphisme de Omarker"
           />
           <img
-            src="assets/images/oeuvresOmarker/HeureBleue.webp"
+            src="<?php echo htmlspecialchars($idVisus[7]['img']); ?>"
             class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-14% md:absolute md:top-47% lg:top-48% md:right-2%"
-            alt="Oeuvre intitulée Heure Bleue"
-            data-nom="Heure Bleue"
-            data-taille="60x80cm"
-            data-tech="Technique mixte sur bois"
-            data-date="2022"
+            alt="graphisme de Omarker"
           />
           <img
-            src="assets/images/oeuvresOmarker/NuitD_orage.webp"
+            src="<?php echo htmlspecialchars($idVisus[8]['img']); ?>"
             class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% lg:w-18% md:absolute md:top-70% lg:top-65% md:left-23%"
-            alt="Oeuvre intitulée Nuit d'orage"
-            data-nom="Nuit d'orage"
-            data-taille="60x80cm"
-            data-tech="Technique mixte sur bois"
-            data-date="2022"
+            alt="graphisme de Omarker"
           />
           <img
-            src="assets/images/oeuvresOmarker/Variable1-2.webp"
+            src="<?php echo htmlspecialchars($idVisus[9]['img']); ?>"
             class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-75% lg:top-75% md:right-34% lg:right-40%"
-            alt="Oeuvre intitulée Variable"
-            data-nom="Variable"
-            data-taille="60x80cm"
-            data-tech="Technique mixte sur bois"
-            data-date="2022"
+            alt="graphisme de Omarker"
           />
           <img
-            src="assets/images/oeuvresOmarker/Trajectoire1.webp"
+            src="<?php echo htmlspecialchars($idVisus[10]['img']); ?>"
             class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-70% lg:top-70% md:right-9%"
-            alt="Oeuvre intitulée Trajectoire"
-            data-nom="Trajectoire"
-            data-taille="60x80cm"
-            data-tech="Technique mixte sur toile"
-            data-date="2021"
+            alt="graphisme de Omarker"
           />
           <img
-            src="assets/images/oeuvresOmarker/Variation.webp"
+            src="<?php echo htmlspecialchars($idVisus[11]['img']); ?>"
             class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-95% lg:top-80% md:left-3%"
-            alt="Oeuvre intitulée Variation"
-            data-nom="Variation"
-            data-taille="60x80cm"
-            data-tech="Technique mixte sur bois"
-            data-date="2022"
+            alt="graphisme de Omarker"
           />
           <img
-            src="assets/images/oeuvresOmarker/VapeurToxique.webp"
+            src="<?php echo htmlspecialchars($idVisus[12]['img']); ?>"
             class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-100% lg:top-88% md:left-22% lg:left-19%"
-            alt="Oeuvre intitulée Vapeur Toxique"
-            data-nom="Vapeur Toxique"
-            data-taille="21x29.7cm"
-            data-tech="Technique mixte sur papier"
-            data-date="2022"
+            alt="graphisme de Omarker"
           />
           <img
-            src="assets/images/oeuvresOmarker/Beton2.webp"
+            src="<?php echo htmlspecialchars($idVisus[13]['img']); ?>"
             class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-95% lg:top-90% md:right-25%"
-            alt="Oeuvre intitulée Beton"
-            data-nom="Beton"
-            data-taille="30x40"
-            data-tech="Technique mixte sur beton"
-            data-date="2021"
+            alt="graphisme de Omarker"
           />
           <img
-            src="assets/images/oeuvresOmarker/MecaniqueOrganique.webp"
+            src="<?php echo htmlspecialchars($idVisus[14]['img']); ?>"
             class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-15% md:absolute md:top-90% lg:top-94% md:right-5%"
-            alt="Oeuvre intitulée Mecanique Organique"
-            data-nom="Mecanique Organique"
-            data-taille="29,7x42cm"
-            data-tech="Technique mixte sur papier"
-            data-date="2020"
+            alt="graphisme de Omarker"
           />
         </section>
 
         <!-- Print -->
         <section
           id="print"
-          class="scrollSpy relative top-28 flex flex-wrap md:block md:h-1000 lg:h-1900 mb-20 md:mb-96"
+          class="scrollSpy relative top-28 flex flex-wrap md:block md:h-800 lg:h-1000 mb-20"
         >
           <img
-            src="assets/images/oeuvresOmarker/Focus.webp"
+            src="<?php echo htmlspecialchars($prints[0]['img']); ?>"
             class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-6% md:left-16%"
-            alt="Oeuvre intitulée Focus"
+            alt="graphisme de Omarker"
           />
           <img
-            src="assets/images/oeuvresOmarker/Algorithme.webp"
-            class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-8% md:left-40%"
-            alt="Oeuvre intitulée Algorithme"
+            src="<?php echo htmlspecialchars($prints[1]['img']); ?>"
+            class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:bottom-1% md:left-18%"
+            alt="graphisme de Omarker"
           />
           <img
-            src="assets/images/oeuvresOmarker/Algorithmique.webp"
+            src="<?php echo htmlspecialchars($prints[2]['img']); ?>"
+            class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:bottom-3% md:right-16%"
+            alt="graphisme de Omarker"
+          />
+          <img
+            src="<?php echo htmlspecialchars($prints[3]['img']); ?>"
+            class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-10% md:left-40%"
+            alt="graphisme de Omarker"
+          />
+          <img
+            src="<?php echo htmlspecialchars($prints[4]['img']); ?>"
             class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:right-14% md:top-0"
-            alt="Oeuvre intitulée Algorithmique"
+            alt="graphisme de Omarker"
           />
           <img
-            src="assets/images/oeuvresOmarker/Concrete2.webp"
-            class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-15% md:absolute md:right-3% md:top-13%"
-            alt="Oeuvre intitulée Concrete"
+            src="<?php echo htmlspecialchars($prints[5]['img']); ?>"
+            class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-15% md:absolute md:right-3% md:top-18%"
+            alt="graphisme de Omarker"
           />
           <img
-            src="assets/images/oeuvresOmarker/FRAGMENT.webp"
-            class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-25% md:absolute md:top-35% md:left-13% lg:left-10%"
-            alt="Oeuvre intitulée Fragment"
+            src="<?php echo htmlspecialchars($prints[6]['img']); ?>"
+            class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-25% md:absolute md:top-28% md:left-13% lg:left-10%"
+            alt="graphisme de Omarker"
           />
           <img
-            src="assets/images/oeuvresOmarker/Start.webp"
-            class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-35% md:absolute md:top-33% lg:top-28% md:right-20%"
-            alt="Oeuvre intitulée Start"
+            src="<?php echo htmlspecialchars($prints[7]['img']); ?>"
+            class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-35% md:absolute md:top-33% lg:top-32% md:right-20%"
+            alt="graphisme de Omarker"
           />
           <img
-            src="assets/images/oeuvresOmarker/FragmentDeTerrain1.webp"
+            src="<?php echo htmlspecialchars($prints[8]['img']); ?>"
             class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-65% lg:top-53% md:left-2%"
-            alt="Oeuvre intitulée FragmentDeTerrain"
+            alt="graphisme de Omarker"
           />
           <img
-            src="assets/images/oeuvresOmarker/HeureBleue.webp"
+            src="<?php echo htmlspecialchars($prints[9]['img']); ?>"
             class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-14% md:absolute md:top-47% lg:top-48% md:right-2%"
-            alt="Oeuvre intitulée HeureBleue"
-          />
-          <img
-            src="assets/images/oeuvresOmarker/NuitD_orage.webp"
-            class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% lg:w-18% md:absolute md:top-70% lg:top-65% md:left-23%"
-            alt="Oeuvre intitulée NuitD"
-          />
-          <img
-            src="assets/images/oeuvresOmarker/Variable1-2.webp"
-            class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-75% lg:top-75% md:right-34% lg:right-40%"
-            alt="Oeuvre intitulée Variable"
-          />
-          <img
-            src="assets/images/oeuvresOmarker/Trajectoire1.webp"
-            class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-70% lg:top-70% md:right-9%"
-            alt="Oeuvre intitulée Trajectoire"
-          />
-          <img
-            src="assets/images/oeuvresOmarker/Variation.webp"
-            class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-95% lg:top-80% md:left-3%"
-            alt="Oeuvre intitulée Variation"
-          />
-          <img
-            src="assets/images/oeuvresOmarker/VapeurToxique.webp"
-            class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-100% lg:top-88% md:left-22% lg:left-19%"
-            alt="Oeuvre intitulée VapeurToxique"
-          />
-          <img
-            src="assets/images/oeuvresOmarker/Beton2.webp"
-            class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-20% md:absolute md:top-95% lg:top-90% md:right-25%"
-            alt="Oeuvre intitulée Beton"
-          />
-          <img
-            src="assets/images/oeuvresOmarker/MecaniqueOrganique.webp"
-            class="peinture hover:invert hover hover:grayscale cursor-pointer duration-1000 ease-in-out object-cover w-1/3 md:w-15% md:absolute md:top-90% lg:top-94% md:right-5%"
-            alt="Oeuvre intitulée MecaniqueOrganique"
+            alt="graphisme de Omarker"
           />
         </section>
       </main>
