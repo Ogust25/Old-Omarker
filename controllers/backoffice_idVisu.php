@@ -8,5 +8,5 @@ $modif = 'IdVisu';
 $table = 'graphisme';
 
 require_once "./models/db_login.php";
-require_once "./models/isVisu.php";
+require_once "./models/idVisu.php";
 require_once "./views/backoffice/galerie.php";
